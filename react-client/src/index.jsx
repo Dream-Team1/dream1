@@ -1,22 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {BrowserRouter, Route, Switch} from "react-router-dom";
+import Planer from "./planer.jsx";
+import Home from "./home.jsx";
+import Navigation from "./links.jsx";
 
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-
-    }
-  }
-
-
-
   render () {
-    return (<div>
-      <h1>Item List</h1>
-      
-    </div>)
+    return (
+      <BrowserRouter>
+        <div>
+          <Navigation />
+            <Switch>
+              <Route exact path="/" component={Home}/>
+              <Route path="/planer" component={Planer}/>
+            </Switch>
+          </div>
+      </BrowserRouter>
+    )
   }
 }
 
