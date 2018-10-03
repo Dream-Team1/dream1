@@ -1,14 +1,19 @@
 import React from 'react';
-
+import Forum from './Forum.js';
 
 class Home extends React.Component {
+
   render () {
     return (
-        <div>
-          <h1>Main Home</h1>
-        </div>
+
+          <div>
+       <Forum />
+
+      </div>
+
 
     )
   }
 }
+
 export default Home;
