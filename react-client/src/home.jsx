@@ -1,5 +1,6 @@
 import React from 'react';
 import Forum from './Forum.js';
+import Rating from 'react-rating';
 
 class Home extends React.Component {
 
@@ -8,7 +9,10 @@ class Home extends React.Component {
 
           <div>
        <Forum />
-
+        <div>
+        <p> First test rating </p>
+         <Rating />
+        </div>
       </div>
 
 
