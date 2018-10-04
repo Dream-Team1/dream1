@@ -6,6 +6,7 @@ import Home from "./home.jsx";
 import Navigation from "./links.jsx";
 
 
+
 class App extends React.Component {
   render () {
     return (
