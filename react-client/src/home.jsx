@@ -1,19 +1,16 @@
 import React from 'react';
-import Forum from './Forum.js';
+import FooterPage from "./footer.js";
+
 
 class Home extends React.Component {
-
   render () {
     return (
-
-          <div>
-       <Forum />
-
-      </div>
-
+        <div>
+          <h1>Main Home</h1>
+          <FooterPage />
+        </div>
 
     )
   }
 }
-
 export default Home;
