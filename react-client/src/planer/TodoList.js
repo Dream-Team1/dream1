@@ -1,56 +1,46 @@
 import React,{Component} from "react";
-import TodoItems from "./TodoItems";
+import TodoInput from "./TodoImput.js";
+import TodoItem from "./todoItem.js";
 
-
-class TodoList extends Component {
+class TodoList extends React.Component {
   constructor(props){
     super(props);
     this.state={
-      items:[]
+      todos:[
+        {id:0, text:"make dinner"},
+        {id:1, text:"make laundry"},
+        {id:2, text:"learn to make react app"}
+      ],
+      nextId:3
     };
-    this.addItem = this.addItem.bind(this);
-    this.deleteItem = this.deleteItem.bind(this);
+    this.addTodo=this.addTodo.bind(this);
+    this.removeTodo=this.removeTodo.bind(this);
   }
-  addItem(e){
-    if(this._inputElement.value !== ""){
-    var newItem ={
-      text:this._inputElement.value,
-      key:Date.now()
-    };
-    this.setState((prevState)=>{
-      return{
-        items:prevState.items.concat(newItem)
-        
-      }
-    });
-  }
-  this._inputElement.value ="";
-  e.preventDefault();
-  }
-  deleteItem(key){
-    var filterdItems = this.state.items.filter(function(item){
-      return (item.key !== key)
-    });
+  addTodo(todoText){
+    let todos = this.state.todos.slice();
+    todos.push({id:this.state.nextId, text: todoText});
     this.setState({
-      items: filterdItems
+      todos: todos,
+      nextId: ++this.state.nextId
+    });
+  }
+  removeTodo(id){
+    this.setState({
+      todos: this.state.todos.filter((todo, index) => todo.id !== id)
     });
   }
   render(){
     return(
       <div className ="todoListMain">
-        <div className ="header">
         <h4>Enter your pending tasks</h4>
-          <form onSubmit ={this.addItem}>
-            <input ref={(a) => this._inputElement = a}
-                placeholder = "enter task">
-            </input>
-            <button type = "submit">add</button>
-          </form>
-        </div>
-        <TodoItems entries ={this.state.items}
-                   delete={this.deleteItem}/>
-
-
+        <TodoInput  todoText="" addTodo={this.addTodo}/>
+        <ul>
+        {
+        this.state.todos.map((todo) => {
+          return <TodoItem todo={todo} key={todo.id} id={todo.id} removeTodo={this.removeTodo}/>
+          })
+        }
+        </ul>
       </div>
     );
   }
