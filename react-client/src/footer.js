@@ -33,11 +33,12 @@ class FooterPage extends React.Component {
                   color="#3b5998"
                   url="https://www.facebook.com/code.dreamteam.5"
                 />
-                 <SocialIcon
+                <a href="mailto:dreamteam2018hc@gmail.com"> <SocialIcon
                  network="google"
                  color="#bc2a8d"
-                 url="https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&osid=1&service=mail&ss=1&ltmpl=default&rm=false&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
-               />
+
+               /></a>
+
               </Col>
             </Row>
           </Container>
