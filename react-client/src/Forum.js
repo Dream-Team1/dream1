@@ -47,7 +47,7 @@ constructor(props){
   render (){
     return(
         <div>
-         <p className ="posts">post</p>
+         
           <Comments addPost={this.addComments} />
            <List posts={this.state.posts} />
          </div>
