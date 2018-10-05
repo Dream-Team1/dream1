@@ -14,16 +14,16 @@ constructor(props){
 }
 updateMessage1(e){
   this.setState({
-    message1: e.target.value
+    message1:e.target.value
   })
 }
-updateMesagge2(e){
+updateMessage2(e){
   this.setState({
     message2: e.target.value
   })
 }
 add(){
-  this.props.addPost(this.state.message1 , this.state.message2);
+  this.props.addPost(this.state.message1, this.state.message2);
   this.setState({
     message1:"",
     message2:""
@@ -35,17 +35,15 @@ add(){
 
 
   render (props){
-    reurn(
-         <div className="callout secondary">
-       <h4 className="leave-comment">Add a Comment</h4>
-        <form className="post-edit" ref="commentForm" onSubmit={this.state.Comments}>
-         <input type="text" ref="name" placeholder="Your Name" required/>
+    return(
+      <div>
+       <p className ="textbox">Event's Name:</p>
+        <input className="box1" onChange={this.updateMessage1} value={this.state.message1}></input>
          <br />
-         <textarea ref="desc" placeholder="Add your comment here" required/>
-
-         <button id="submit" type="submit" className="button button-outline comment-button action-button expand-right">Add Comment</button>
-       </form>
-
+         <br />
+       <p className ="textbox">Event's Description:</p>
+       <input className="box2" onChange={this.updateMessage2} value={this.state.message2}></input>
+      <button className="button2" onClick={this.add}>submit</button>
      </div>
    );
   }
