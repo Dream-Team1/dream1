@@ -1,13 +1,13 @@
-DROP DATABASE IF EXISTS test;
+DROP DATABASE IF EXISTS dream1;
 
-CREATE DATABASE test;
+CREATE DATABASE dream1;
 
-USE test;
+USE dream1;
 
-CREATE TABLE items (
+CREATE TABLE comentarios (
   id int NOT NULL AUTO_INCREMENT,
-  quantity integer NOT NULL,
-  description varchar(50) NOT NULL,
+  message1 varchar(50) NOT NULL,
+  message2 varchar(500) NOT NULL,
   PRIMARY KEY (ID)
 );
 
