@@ -1,6 +1,6 @@
 import React,{Component} from "react";
-import TodoInput from "./TodoImput.js";
-import TodoItem from "./todoItem.js";
+import TodoInput from "./list/TodoImput.js";
+import TodoItem from "./list/todoItem.js";
 
 class TodoList extends React.Component {
   constructor(props){
@@ -39,7 +39,7 @@ class TodoList extends React.Component {
         this.state.todos.map((todo) => {
           return <TodoItem todo={todo} key={todo.id} id={todo.id} removeTodo={this.removeTodo}/>
           })
-        }
+          }
         </ul>
       </div>
     );

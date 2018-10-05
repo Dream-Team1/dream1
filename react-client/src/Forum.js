@@ -33,6 +33,7 @@ constructor(props){
       method: 'GET',
     success: (results) => {
       this.setState({posts:results});
+      console.log( results);
     },
     error: (xhr, err) => {
       console.log('err', err);

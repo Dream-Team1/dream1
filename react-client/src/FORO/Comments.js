@@ -44,10 +44,5 @@ add(){
      </div>
    );
   }
-
 }
-
-
-
-
 export default Comments;
