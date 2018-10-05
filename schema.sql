@@ -1,8 +1,8 @@
-DROP DATABASE IF EXISTS dream1;
+DROP DATABASE IF EXISTS dreams;
 
-CREATE DATABASE dream1;
+CREATE DATABASE dreams;
 
-USE dream1;
+USE dreams;
 
 CREATE TABLE comentarios (
   id int NOT NULL AUTO_INCREMENT,
