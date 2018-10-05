@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Row, Footer } from "mdbreact";
 import { SocialIcon } from "react-social-icons";
-// import "./Footer.css";
+
 
 class FooterPage extends React.Component {
   render() {
@@ -10,6 +10,7 @@ class FooterPage extends React.Component {
         color="unique-color-dark"
         className="page-footer font-small pt-0"
       >
+    
         <div style={{ backgroundColor: "#000080" }}>
           <Container >
             <Row className="py-4 d-flex align-items-center">
