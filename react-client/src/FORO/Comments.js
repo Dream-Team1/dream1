@@ -6,7 +6,6 @@ constructor(props){
   this.state = {
       message1:"",
       message2:""
-
   }
       this.add = this.add.bind(this);
   this.updateMessage1 = this.updateMessage1.bind(this);
@@ -29,12 +28,7 @@ add(){
     message2:""
   })
 }
-
-
-
-
-
-  render (props){
+  render (){
     return(
       <div>
        <p className ="textbox">Event's Name:</p>
@@ -47,10 +41,5 @@ add(){
      </div>
    );
   }
-
 }
-
-
-
-
 export default Comments;
