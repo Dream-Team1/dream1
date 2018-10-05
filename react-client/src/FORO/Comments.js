@@ -6,7 +6,6 @@ constructor(props){
   this.state = {
       message1:"",
       message2:""
-
   }
       this.add = this.add.bind(this);
   this.updateMessage1 = this.updateMessage1.bind(this);
@@ -14,7 +13,7 @@ constructor(props){
 }
 updateMessage1(e){
   this.setState({
-    message1:e.target.value
+    message1: e.target.value
   })
 }
 updateMessage2(e){
@@ -29,20 +28,18 @@ add(){
     message2:""
   })
 }
-
-
-
-
-
-  render (props){
+  render (){
     return(
       <div>
-       <p className ="textbox">Event's Name:</p>
+      <p>Are you looking for a service??
+       post it here and you will start getting reponces from people</p>
+
+       <p className ="textbox">Service Name:</p>
         <input className="box1" onChange={this.updateMessage1} value={this.state.message1}></input>
          <br />
          <br />
-       <p className ="textbox">Event's Description:</p>
-       <input className="box2" onChange={this.updateMessage2} value={this.state.message2}></input>
+       <p className ="textbox">Service Description:</p>
+       <textarea className="box2" onChange={this.updateMessage2} value={this.state.message2}></textarea>
       <button className="button2" onClick={this.add}>submit</button>
      </div>
    );
