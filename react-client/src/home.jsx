@@ -8,9 +8,20 @@ class Home extends React.Component {
   render () {
     return (
         <div>
-        <Stars />
           <h1>Main Home</h1>
           <Forum />
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <Stars />
+          <br/>
+          <br/>
           <FooterPage />
         </div>
 
