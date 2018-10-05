@@ -33,7 +33,7 @@ app.post('/Forum', function(req, res){
    database.insertOne(message1,message2,(err, results) => {
      if (err) {
        res.sendStatus(500);
-      
+      console.log("this is post", err)
      } else {
        res.status(200).json(results);
      }
