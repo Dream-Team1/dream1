@@ -42,7 +42,7 @@ class Uploader extends React.Component {
         <div>
           <button>Upload</button>
         </div>
-        <img src={this.state.imageURL} alt="img" />
+        <img src={this.state.imageURL} alt=" " />
       </form>
     );
   }

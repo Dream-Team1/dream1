@@ -2,7 +2,8 @@ import React from 'react';
 import FooterPage from "./footer.js";
 import Stars from './starRating.js';
 import Forum from "./Forum.js";
-import Face from './share.js'
+import Face from './share.js';
+import Uploader from "./Uploader/Uploader.js";
 
 
 
@@ -13,6 +14,7 @@ class Home extends React.Component {
           <h1>Main Home</h1>
           <Forum />
           <br/>
+          <Uploader />
           <br/>
           <br/>
           <br/>
