@@ -2,7 +2,7 @@ import React from 'react';
 import FooterPage from "./footer.js";
 import Stars from './starRating.js';
 import Forum from "./Forum.js";
-import Face from './share.js'
+
 
 
 class Home extends React.Component {
@@ -22,7 +22,6 @@ class Home extends React.Component {
           <br/>
           <Stars />
           <br/>
-          <Face />
           <br/>
           <FooterPage />
         </div>
