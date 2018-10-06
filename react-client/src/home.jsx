@@ -2,6 +2,10 @@ import React from 'react';
 import FooterPage from "./footer.js";
 import Stars from './starRating.js';
 import Forum from "./Forum.js";
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 
 
 class Home extends React.Component {
