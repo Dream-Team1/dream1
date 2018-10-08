@@ -1,13 +1,14 @@
-DROP DATABASE IF EXISTS dreams;
+DROP DATABASE IF EXISTS dream1;
 
-CREATE DATABASE dreams;
+CREATE DATABASE dream1;
 
-USE dreams;
+USE dream1;
 
 CREATE TABLE comentarios (
   id int NOT NULL AUTO_INCREMENT,
   message1 varchar(50) NOT NULL,
   message2 varchar(500) NOT NULL,
+   > image blob NOT NULL,
   PRIMARY KEY (ID)
 );
 
