@@ -1,6 +1,6 @@
 import React from 'react';
-import Maps from "./planer/map.js";
-import TodoList from "./planer/TodoList.js";
+import Maps from "./components/planer/map.js";
+import TodoList from "./components/planer/TodoList.js";
 
 
 class Planer extends React.Component {
