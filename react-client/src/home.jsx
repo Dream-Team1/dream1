@@ -23,10 +23,9 @@ class Home extends React.Component {
           <br/>
           <br/>
           <Stars />
-          <br/>
+          <br/>        
           <br/>
           <FooterPage />
-
         </div>
 
     )
