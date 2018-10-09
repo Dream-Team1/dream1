@@ -29,9 +29,7 @@ app.use(fileUpload());
 app.get('/Forum', function(req, res){
   database.selectAll((err, results) => {
      if(err) {
-       console.log('eror conecting to the database');
        res.sendStatus(500);
-       console.log(err);
      } else {
        res.status(200).json(results);
      }
@@ -48,7 +46,35 @@ app.post('/Forum', function(req, res){
    database.insertOne(message1,message2,(err, results) => {
      if (err) {
        res.sendStatus(500);
-      console.log("this is post", err)
+     } else {
+       res.status(200).json(results);
+     }
+   });
+ }
+});
+
+//this are the requests for the todo pending tasks
+app.get('todo', function(req, res){
+  database.selectTodos((err, results) => {
+     if(err) {
+       res.sendStatus(500);
+       console.log("error en el server")
+     } else {
+      console.log("working on server")
+       res.status(200).json(results);
+     }
+   })
+})
+app.post('/todo', function(req, res){
+
+ let value1 = req.body.value1;
+
+ if(!value1) {
+   res.sendStatus(400);
+ } else {
+   database.insertTodos(value1,(err, results) => {
+     if (err) {
+       res.sendStatus(500);
      } else {
        res.status(200).json(results);
      }
