@@ -6,14 +6,36 @@ class Stars extends React.Component {
    constructor(props) {
      super();
      this.state = {
-      rating: 5,
-      hover: null
-     this.handleRating = this.handleRating.bind(this)
+
      }
+
    }
-   handleRating() {
-    let rating = Number(this.ref.rating.value)
+   handleRating(val) {
+     console.log("this is the rating change...", val)
+     $.ajax({
+       method: "POST",
+        url: "/star",
+       contentType: 'application/json',
+       data: JSON.stringify({
+          val: val
+       })
+     }).done(() => {
+       this.getAverage();
+     });
    }
+
+   getAverage (){
+    $.ajax({
+      url: '/getRating',
+      method: 'GET',
+    success: (results) => {
+    console.log("this is the results in the get request", results)
+    },
+    error: (xhr, err) => {
+      console.log('err', err);
+      }
+    })
+  }
 
 
   render() {
@@ -22,9 +44,9 @@ class Stars extends React.Component {
     //  <link href="https://use.fontawesome.com/release/v5.0.8/css/all.css" rel="stylesheet">
       // <form target= "_self" method="GET">
       <div>
-       <Rating ref="rating" onChange={this.handleRating} value={rating} />
+    
+       <Rating onChange={this.handleRating.bind(this)} />
 
-      <button  type='submit' className='btn btn-primary'>Submit Rating</button>
       </div>
       // </form>
     )

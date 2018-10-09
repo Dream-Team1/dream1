@@ -1,3 +1,5 @@
+DROP DATABASE IF EXISTS dreams; 
+
 CREATE DATABASE dreams;
 
 USE dreams;
@@ -12,6 +14,12 @@ CREATE TABLE comentarios (
 CREATE TABLE todos (
   id int NOT NULL AUTO_INCREMENT,
   value1 varchar(100) NOT NULL,
+  PRIMARY KEY (ID)
+);
+
+CREATE TABLE stars101 (
+  id int NOT NULL AUTO_INCREMENT,
+  val integer NOT NULL,
   PRIMARY KEY (ID)
 );
 
