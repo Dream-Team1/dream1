@@ -6,8 +6,13 @@ class Stars extends React.Component {
    constructor(props) {
      super(props);
      this.state = {
-      rating: '',
+      rating: 5,
+      hover: null
+     this.handleSubmit = this.handleSubmit.bind(this)
      }
+   }
+   handleSubmit() {
+     this.handleSubmit =
    }
 
   render() {
@@ -18,7 +23,7 @@ class Stars extends React.Component {
       <div>
        <Rating />
 
-      <button type='submit' className='btn btn-primary'>Submit Rating</button>
+      <button r = 'fa fa-star' type='submit' className='btn btn-primary'>Submit Rating</button>
       </div>
       // </form>
     )
