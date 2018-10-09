@@ -1,7 +1,6 @@
 import React from "react";
 import { Col, Container, Row, Footer } from "mdbreact";
 import { SocialIcon } from "react-social-icons";
-// import "./Footer.css";
 
 class FooterPage extends React.Component {
   render() {
@@ -47,7 +46,7 @@ class FooterPage extends React.Component {
                href = "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fcode.dreamteam. 5 & ​​src = sdkpreparse "
                class = " fb-xfbml-parse-ignore " >  </a>
                </div>
-               
+
 
               </Col>
             </Row>
