@@ -16,8 +16,7 @@ class Stars extends React.Component {
     //  <link href="https://use.fontawesome.com/release/v5.0.8/css/all.css" rel="stylesheet">
       // <form target= "_self" method="GET">
       <div>
-       <Rating className='Stars' onClick={this.state}
-       caption='hello this is my caption!' totalStars={5} />
+       <Rating />
 
       <button type='submit' className='btn btn-primary'>Submit Rating</button>
       </div>

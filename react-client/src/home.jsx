@@ -1,8 +1,8 @@
 import React from 'react';
-import FooterPage from "./footer.js";
-import Stars from './starRating.js';
-import Forum from "./Forum.js";
-
+import FooterPage from "./components/footer.js";
+import Stars from './components/starRating.js';
+import Forum from "./components/Forum.js";
+import Main from "./components/search.js";
 
 
 class Home extends React.Component {
@@ -18,12 +18,14 @@ class Home extends React.Component {
           <br/>
           <br/>
           <br/>
+          <Main />
           <br/>
           <br/>
           <Stars />
           <br/>
           <br/>
           <FooterPage />
+
         </div>
 
     )

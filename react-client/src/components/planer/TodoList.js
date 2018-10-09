@@ -7,11 +7,10 @@ class TodoList extends React.Component {
     super(props);
     this.state={
       todos:[
-        {id:0, text:"make dinner"},
-        {id:1, text:"make laundry"},
-        {id:2, text:"learn to make react app"}
+        {id:0, text:"Order cake"},
+        {id:1, text:"Look for outfit"}
       ],
-      nextId:3
+      nextId:2
     };
     this.addTodo=this.addTodo.bind(this);
     this.removeTodo=this.removeTodo.bind(this);
@@ -35,16 +34,13 @@ class TodoList extends React.Component {
         <h4>Enter your pending tasks</h4>
         <TodoInput  todoText="" addTodo={this.addTodo}/>
         <ul>
-        {
-        this.state.todos.map((todo) => {
+        {this.state.todos.map((todo) => {
           return <TodoItem todo={todo} key={todo.id} id={todo.id} removeTodo={this.removeTodo}/>
-          })
-          }
+          })}
         </ul>
       </div>
     );
   }
-
 }
 
 export default TodoList;
