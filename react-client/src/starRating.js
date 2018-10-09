@@ -4,16 +4,17 @@ import Rating from 'react-rating';
 
 class Stars extends React.Component {
    constructor(props) {
-     super(props);
+     super();
      this.state = {
       rating: 5,
       hover: null
-     this.handleSubmit = this.handleSubmit.bind(this)
+     this.handleRating = this.handleRating.bind(this)
      }
    }
-   handleSubmit() {
-     this.handleSubmit =
+   handleRating() {
+    let rating = Number(this.ref.rating.value)
    }
+
 
   render() {
     return(
@@ -21,9 +22,9 @@ class Stars extends React.Component {
     //  <link href="https://use.fontawesome.com/release/v5.0.8/css/all.css" rel="stylesheet">
       // <form target= "_self" method="GET">
       <div>
-       <Rating />
+       <Rating ref="rating" onChange={this.handleRating} value={rating} />
 
-      <button r = 'fa fa-star' type='submit' className='btn btn-primary'>Submit Rating</button>
+      <button  type='submit' className='btn btn-primary'>Submit Rating</button>
       </div>
       // </form>
     )
