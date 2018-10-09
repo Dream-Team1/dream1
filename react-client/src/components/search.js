@@ -23,7 +23,6 @@ const Main = compose(withProps({
       margin: `0 auto`
     }}/>
 }), lifecycle({
-
   componentDidMount() {
     navigator.geolocation.getCurrentPosition(location => {
     this.setState({
@@ -31,7 +30,6 @@ const Main = compose(withProps({
       lon: location.coords.longitude
     })
   })
-
     const refs = {};
     this.setState({
       bounds: null,
