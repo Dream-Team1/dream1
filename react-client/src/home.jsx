@@ -12,7 +12,6 @@ class Home extends React.Component {
           <h1>Main Home</h1>
           <Forum />
           <br/>
-          <Uploader />
           <br/>
           <br/>
           <br/>
@@ -23,8 +22,7 @@ class Home extends React.Component {
           <br/>
           <br/>
           <Stars />
-          <br/>
-          <Face />
+          <br/>        
           <br/>
           <FooterPage />
         </div>
