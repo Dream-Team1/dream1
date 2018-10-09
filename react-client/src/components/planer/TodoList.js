@@ -41,7 +41,6 @@ class TodoList extends React.Component {
       </div>
     );
   }
-
 }
 
 export default TodoList;

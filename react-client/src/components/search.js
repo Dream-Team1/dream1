@@ -5,7 +5,6 @@ import {
 import {compose, withProps, lifecycle} from 'recompose';
 import _ from 'lodash'
 import SearchBox from "react-google-maps/lib/components/places/SearchBox";
-import TableList from "./search/resultList.js";
 import {Grid, Row, Col} from 'react-bootstrap';
 
 
@@ -16,24 +15,31 @@ const Main = compose(withProps({
     height: `200%`
   }}/>,
   containerElement: <div style={{
-    height: `600px`
+    height: `500px`
   }}/>,
   mapElement: <div style={{
-      height: `90%`,
-      width: `80%`,
+      height: `70%`,
+      width: `60%`,
       margin: `0 auto`
     }}/>
 }), lifecycle({
-  componentWillMount() {
-    const refs = {};
 
+  componentDidMount() {
+    navigator.geolocation.getCurrentPosition(location => {
+    this.setState({
+      lat: location.coords.latitude,
+      lon: location.coords.longitude
+    })
+    this.getEvent();
+  })
+
+    const refs = {};
     this.setState({
       bounds: null,
       places: [],
       center: {
-        lat: 19.39776549999999,
-        lng: -99.1713954,
-
+        lat: 19.4222496,
+        lng: -99.1740582,
       },
       markers: [],
       onMapMounted: ref => {
@@ -78,7 +84,6 @@ const Main = compose(withProps({
         const nextCenter = _.get(nextMarkers, '0.position', this.state.center);
 
         this.setState({center: nextCenter, markers: nextMarkers, places});
-
       }
     })
   }
@@ -97,7 +102,7 @@ const Main = compose(withProps({
           onPlacesChanged={props.onPlacesChanged}>
           <input
             type="text"
-            placeholder="type the service or store that you are looking for"
+            placeholder="type name of place"
             style={{
             boxSizing: `border-box`,
             border: `3px solid transparent`,
@@ -108,7 +113,7 @@ const Main = compose(withProps({
             borderRadius: `31px`,
             boxShadow: `0 2px 6px rgba(0, 0, 0, 0.3)`,
             fontSize: `16px`,
-            
+            border: `black`,
             textOverflow: `ellipses`,
             color: `#f87800`
           }}/>

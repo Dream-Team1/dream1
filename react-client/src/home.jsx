@@ -25,6 +25,7 @@ class Home extends React.Component {
           <br/>
           <br/>
           <FooterPage />
+
         </div>
 
     )
