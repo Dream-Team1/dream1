@@ -1,7 +1,6 @@
 import React from 'react';
-//import Maps from "./components/planer/map.js";
 import TodoList from "./components/planer/TodoList.js";
-
+import DateTime from "./components/planer/date.js"
 
 class Planer extends React.Component {
 
@@ -9,13 +8,20 @@ class Planer extends React.Component {
     return (
         <div>
           <h1>this is the planner</h1>
+<<<<<<< HEAD
+           <TodoList />
+           <DateTime />
+=======
 
             <div className="row">
+>>>>>>> master
 
-           <div className="col-sm-5"><TodoList /></div>
 
+<<<<<<< HEAD
+=======
 
          </div>
+>>>>>>> master
 
            </div>
     )

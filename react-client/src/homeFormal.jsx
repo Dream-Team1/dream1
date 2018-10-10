@@ -3,17 +3,17 @@ import FooterPage from "./components/footer.js";
 import Stars from './components/starRating.js';
 import Forum from "./components/Forum.js";
 import Main from "./components/search.js";
-import Uploader from "./Uploader/Uploader.js";
+import {Link} from 'react-router-dom';
 
-class Home extends React.Component {
-
+class HomeFormal extends React.Component {
   render () {
     return (
         <div>
+          
+            <Link to="/planer">Plan a Party</Link>
           <h1>Main Home</h1>
           <Forum />
           <br/>
-          <Uploader />
           <br/>
           <br/>
           <br/>
@@ -32,4 +32,4 @@ class Home extends React.Component {
     )
   }
 }
-export default Home;
+export default HomeFormal;
