@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Info from "./partyInfo/info.js";
 
 
 class PartyInfo extends React.Component {
@@ -8,7 +8,7 @@ class PartyInfo extends React.Component {
     return (
       <div>
         <h1>this is the form</h1>
-
+        <Info />
 
       </div>
     )
