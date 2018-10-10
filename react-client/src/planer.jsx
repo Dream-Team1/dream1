@@ -1,7 +1,6 @@
 import React from 'react';
-import Maps from "./planer/map.js";
-import TodoList from "./planer/TodoList.js";
-import Calendar from "./Calendar/indexCalendar.js";
+import TodoList from "./components/planer/TodoList.js";
+//import Calendar from "./Calendar/indexCalendar.js";
 
 
 class Planer extends React.Component {
@@ -13,7 +12,7 @@ class Planer extends React.Component {
             <div className="row">
 
            <div className="col-sm-5"><TodoList /></div>
-           <Calendar />
+           
          </div>
 
            </div>

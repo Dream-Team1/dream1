@@ -1,12 +1,12 @@
 import React from 'react';
-import FooterPage from "./components/footer.js";
+import FooterPage from "./footer.js";
 import Stars from './components/starRating.js';
 import Forum from "./components/Forum.js";
 import Main from "./components/search.js";
 
 
 class Home extends React.Component {
-  
+
   render () {
     return (
         <div>
@@ -23,7 +23,7 @@ class Home extends React.Component {
           <br/>
           <br/>
           <Stars />
-          <br/>        
+          <br/>
           <br/>
           <FooterPage />
         </div>
