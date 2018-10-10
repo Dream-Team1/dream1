@@ -8,20 +8,10 @@ class Planer extends React.Component {
     return (
         <div>
           <h1>this is the planner</h1>
-<<<<<<< HEAD
+
            <TodoList />
            <DateTime />
-=======
 
-            <div className="row">
->>>>>>> master
-
-
-<<<<<<< HEAD
-=======
-
-         </div>
->>>>>>> master
 
            </div>
     )
