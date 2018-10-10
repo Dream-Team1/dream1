@@ -9,10 +9,12 @@ class Planer extends React.Component {
     return (
         <div>
           <h1>this is the planner</h1>
+
             <div className="row">
 
            <div className="col-sm-5"><TodoList /></div>
-           
+
+
          </div>
 
            </div>
