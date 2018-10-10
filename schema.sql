@@ -1,4 +1,4 @@
-DROP DATABASE IF EXISTS dreams;
+DROP DATABASE IF EXISTS dreams; 
 
 CREATE DATABASE dreams;
 
@@ -8,11 +8,18 @@ CREATE TABLE comentarios (
   id int NOT NULL AUTO_INCREMENT,
   message1 varchar(50) NOT NULL,
   message2 varchar(500) NOT NULL,
+  image blob NOT NULL,
   PRIMARY KEY (ID)
 );
 CREATE TABLE todos (
   id int NOT NULL AUTO_INCREMENT,
   value1 varchar(100) NOT NULL,
+  PRIMARY KEY (ID)
+);
+
+CREATE TABLE stars101 (
+  id int NOT NULL AUTO_INCREMENT,
+  val integer NOT NULL,
   PRIMARY KEY (ID)
 );
 
