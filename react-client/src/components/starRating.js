@@ -43,8 +43,6 @@ class Stars extends React.Component {
   render() {
     return(
 
-    //  <link href="https://use.fontawesome.com/release/v5.0.8/css/all.css" rel="stylesheet">
-      // <form target= "_self" method="GET">
       <div>
 
        <Rating onChange={this.handleRating.bind(this)} />
