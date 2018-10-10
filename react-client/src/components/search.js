@@ -29,6 +29,7 @@ const Main = compose(withProps({
       lat: location.coords.latitude,
       lon: location.coords.longitude
     })
+
   })
     const refs = {};
     this.setState({
