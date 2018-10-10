@@ -30,10 +30,7 @@ const Main = compose(withProps({
       lat: location.coords.latitude,
       lon: location.coords.longitude
     })
-<<<<<<< 03499d5096f9c46adfcac9145592fa32d1788ec3
-=======
-    this.getEvent();
->>>>>>> refactor code sofar
+
   })
 
     const refs = {};
