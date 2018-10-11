@@ -3,7 +3,7 @@ import { Col, Container, Row, Footer } from "mdbreact";
 import { SocialIcon } from "react-social-icons";
 // import "./Footer.css";
 
-class FooterPage extends React.Component {
+  class FooterPage extends React.Component {
   render() {
     return (
       <Footer
