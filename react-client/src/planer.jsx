@@ -4,7 +4,7 @@ import DateTime from "./components/planer/date.js"
 import Calendar from "./components/Calendar.jsx"
 
 
-class Planer extends React.Component {
+ class Planer extends React.Component {
 
   render () {
     return (
