@@ -3,7 +3,7 @@ import { Col, Container, Row, Footer } from "mdbreact";
 import { SocialIcon } from "react-social-icons";
 // import "./Footer.css";
 
-class FooterPage extends React.Component {
+  class FooterPage extends React.Component {
   render() {
     return (
       <Footer
@@ -38,16 +38,16 @@ class FooterPage extends React.Component {
                  color="#bc2a8d"
 
                /></a>
-               <div class = "fb-share-button"
+               <div className = "fb-share-button"
                data-href = "https://www.facebook.com/code.dreamteam.5"
                data-layout = "button_count"
                data-size = "large"
                data-mobile- iframe = "true" >
                <a target = "_blank"
                href = "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fcode.dreamteam. 5 & ​​src = sdkpreparse "
-               class = " fb-xfbml-parse-ignore " >  </a>
+               className = " fb-xfbml-parse-ignore " >  </a>
                </div>
-               
+
 
               </Col>
             </Row>

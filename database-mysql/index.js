@@ -49,8 +49,32 @@ var insertTodos = function(value1, cb) {
      }
    });
 };
+//this is for the rating system
+var insertRating = function(val, cb) {
+ connection.query('INSERT INTO stars101 (val) VALUES (?)',
+   [val], (err, results, fields) => {
+     if(err) {
+       cb(err, null);
+     } else {
+       cb(null, results);
+     }
+   });
+};
 
+var average = function(callback) {
+  connection.query('SELECT AVG(val) FROM stars101', function(err, results, fields) {
+    if(err) {
+      console.log("error en db")
+      callback(err, null);
+    } else {
+      callback(null, results);
+    }
+  });
+};
+
+module.exports.average = average;
 module.exports.selectAll = selectAll;
 module.exports.insertOne = insertOne;
 module.exports.insertTodos = insertTodos;
 module.exports.selectTodos = selectTodos;
+module.exports.insertRating = insertRating;

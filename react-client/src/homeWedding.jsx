@@ -1,17 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import FooterPage from "./components/footer.js";
 import Stars from './components/starRating.js';
 import Forum from "./components/Forum.js";
 import Main from "./components/search.js";
-import Example from "./components/Calendar.jsx"
+import {Link} from 'react-router-dom';
 
-class Home extends React.Component {
-
+class HomeWedding extends React.Component {
   render () {
     return (
         <div>
-        <Example />
+            
+            <Link to="/planer">Plan a Party</Link>
           <h1>Main Home</h1>
           <Forum />
           <br/>
@@ -33,4 +32,4 @@ class Home extends React.Component {
     )
   }
 }
-export default Home;
+export default HomeWedding;
