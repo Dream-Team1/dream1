@@ -2,8 +2,8 @@ var mysql = require('mysql');
 
 var connection = mysql.createConnection({
   host     : 'localhost',
-  user     : 'student',
-  password : 'password',
+  user     : 'root',
+  password : 'holacode',
   database : 'dreams'
 });
 
@@ -71,6 +71,27 @@ var average = function(callback) {
     }
   });
 };
+//this is for the info section
+var selectInfo = function(callback) {
+  connection.query('SELECT * FROM info', function(err, results, fields) {
+    if(err) {
+      callback(err, null);
+    } else {
+      callback(null, results);
+    }
+  });
+};
+var insertInfo = function(name,details,address, cb) {
+ connection.query('INSERT INTO info (name,details,address) VALUES (?,?,?)',
+   [name,details,address], (err, results, fields) => {
+     if(err) {
+       console.log("this is database post")
+       cb(err, null);
+     } else {
+       cb(null, results);
+     }
+   });
+};
 
 module.exports.average = average;
 module.exports.selectAll = selectAll;
@@ -78,3 +99,5 @@ module.exports.insertOne = insertOne;
 module.exports.insertTodos = insertTodos;
 module.exports.selectTodos = selectTodos;
 module.exports.insertRating = insertRating;
+module.exports.insertInfo = insertInfo;
+module.exports.selectInfo = selectInfo;

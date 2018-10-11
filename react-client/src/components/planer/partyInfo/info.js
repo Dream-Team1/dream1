@@ -8,7 +8,7 @@ constructor(props){
       details:"",
       address:""
   }
-      this.add = this.add.bind(this);
+  this.add = this.add.bind(this);
   this.updateName = this.updateName.bind(this);
   this.updateDetails= this.updateDetails.bind(this);
   this.updateAddress= this.updateAddress.bind(this)
