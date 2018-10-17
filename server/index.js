@@ -10,8 +10,6 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 app.use(express.static(__dirname + '/../react-client/dist'));
 
-
-
 app.get('/Forum', function(req, res){
   database.selectAll((err, results) => {
      if(err) {
@@ -26,7 +24,7 @@ app.post('/Forum', function(req, res){
  let message1 = req.body.message1;
  let message2 = req.body.message2;
 
- if(!message1) {
+ if(!message1 && !message2) {
    res.sendStatus(400);
  } else {
    database.insertOne(message1,message2,(err, results) => {
@@ -89,6 +87,35 @@ app.post('/star', function(req, res){
 
 app.get('/getRating', function(req, res){
   database.average((err, results) => {
+     if(err) {
+       res.sendStatus(500);
+     } else {
+       res.status(200).json(results);
+     }
+   })
+})
+//this is for info secction
+app.post('/info', function(req, res){
+
+ let name = req.body.name ;
+ let details = req.body.details;
+ let address = req.body.address;
+
+ if(!name && !details && !address) {
+   res.sendStatus(400);
+ } else {
+   database.insertInfo (name,details,address,(err, results) => {
+     if (err) {
+       res.sendStatus(500);
+     } else {
+       res.status(200).json(results);
+     }
+   });
+ }
+});
+
+app.get('/info', function(req, res){
+  database.selectInfo((err, results) => {
      if(err) {
        res.sendStatus(500);
      } else {

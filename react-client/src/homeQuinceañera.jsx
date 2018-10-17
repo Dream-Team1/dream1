@@ -5,6 +5,7 @@ import Forum from "./components/Forum.js";
 import Main from "./components/search.js";
 import {Link} from 'react-router-dom';
 
+
 class Home extends React.Component {
 
   render () {
@@ -13,8 +14,9 @@ class Home extends React.Component {
 
             <Link to="/planer">Plan a Party</Link>
           <h1>Main Home</h1>
+        
           <Forum />
-          <br/>        
+          <br/>
           <br/>
           <br/>
           <br/>

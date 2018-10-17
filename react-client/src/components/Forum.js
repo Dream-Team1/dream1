@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import Comments from "./FORO/Comments.js";
 import Post from "./FORO/Post.js";
 import List from "./FORO/List.js";
-import Uploader from "../Uploader/Uploader.js";
 import $ from "jquery";
 
 class Forum extends React.Component {
