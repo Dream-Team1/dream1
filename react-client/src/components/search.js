@@ -84,11 +84,19 @@ const Main = compose(withProps({
       }
     })
   }
+<<<<<<< HEAD
 }), withScriptjs, withGoogleMap)(props =>
 <div className="container">
   <div className="row">
     <div className="col-md-6">
       <GoogleMap
+=======
+}), withScriptjs, withGoogleMap)(props => <Grid>
+  <Row className="show-grid">
+    <Col md={6} mdPush={6}>
+
+      <GoogleMap className="map"
+>>>>>>> master
         ref={props.onMapMounted}
         defaultZoom={15}
         center={props.center}
