@@ -5,22 +5,21 @@ import {
 import {compose, withProps, lifecycle} from 'recompose';
 import _ from 'lodash'
 import SearchBox from "react-google-maps/lib/components/places/SearchBox";
-import {Grid, Row, Col} from 'react-bootstrap';
+import {Grid, Row, Col,table,thead} from 'react-bootstrap';
 
 
 const Main = compose(withProps({
   googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyBD2x3uoBXe8vWtIaBkvRvlrD9msa-X" +
       "hnM&v=3.exp&libraries=geometry,drawing,places",
   loadingElement: <div style={{
-    height: `200%`
+    height: `100%`
   }}/>,
-  containerElement: <div style={{
-    height: `500px`
+  containerElement: <div className="mapp" style={{
+    height: `500px`,
+    width: `500px`
   }}/>,
   mapElement: <div style={{
-      height: `70%`,
-      width: `60%`,
-      margin: `0 auto`
+      height: `100%`
     }}/>
 }), lifecycle({
   componentDidMount() {
@@ -85,9 +84,10 @@ const Main = compose(withProps({
       }
     })
   }
-}), withScriptjs, withGoogleMap)(props => <Grid>
-  <Row className="show-grid">
-    <Col md={6} mdPush={6}>
+}), withScriptjs, withGoogleMap)(props =>
+<div className="container">
+  <div className="row">
+    <div className="col-md-6">
       <GoogleMap
         ref={props.onMapMounted}
         defaultZoom={15}
@@ -120,8 +120,8 @@ const Main = compose(withProps({
           .markers
           .map((marker, index) => <Marker key={index} position={marker.position}/>)}
       </GoogleMap>
-    </Col>
-    <Col md={6} mdPull={6}>
+    </div>
+    <div className="col-md-6">
       {props
         .places
         .map(({place_id, formatted_address, rating, name}) =>
@@ -130,8 +130,8 @@ const Main = compose(withProps({
           <p className="entrie-address">{formatted_address}</p>
           <p className="entrie-rating">Rating:{rating}</p>
         </div>)}
-    </Col>
-  </Row>
-</Grid>);
+    </div>
+  </div>
+</div>);
 
 export default Main;
