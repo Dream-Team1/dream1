@@ -5,12 +5,13 @@ class Share extends React.Component {
    constructor(props) {
      super()
      this.state = {
-       
      }
+    // this.onClick = this.onClick.bind(this)
    }
-   //onClick() {
-    // window.open('fb-messenger://share?link=' + encodeURIComponent(link) + '&app_id=' + encodeURIComponent(app_id));
-   //}
+  // onClick() {
+  //   window.open('fb-messenger://share?''link=' + encodeURIComponent('https://github.com/SthefaniaRodriguezL?tab=repositories');
+  //   console.log('the click');
+  // }
 
   render() {
     return(
