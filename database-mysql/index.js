@@ -85,7 +85,26 @@ var insertInfo = function(name,details,address, cb) {
  connection.query('INSERT INTO info (name,details,address) VALUES (?,?,?)',
    [name,details,address], (err, results, fields) => {
      if(err) {
-       console.log("this is database post")
+       cb(err, null);
+     } else {
+       cb(null, results);
+     }
+   });
+};
+//this is for the comments secction per post
+var selectComentario = function(callback) {
+  connection.query('SELECT * FROM respuestas', function(err, results, fields) {
+    if(err) {
+      callback(err, null);
+    } else {
+      callback(null, results);
+    }
+  });
+};
+var insertComentario = function(comentario, cb) {
+ connection.query('INSERT INTO respuestas (comentario) VALUES (?)',
+   [comentario], (err, results, fields) => {
+     if(err) {
        cb(err, null);
      } else {
        cb(null, results);
@@ -101,3 +120,5 @@ module.exports.selectTodos = selectTodos;
 module.exports.insertRating = insertRating;
 module.exports.insertInfo = insertInfo;
 module.exports.selectInfo = selectInfo;
+module.exports.insertComentario=insertComentario;
+module.exports.selectComentario =selectComentario;

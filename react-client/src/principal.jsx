@@ -4,7 +4,7 @@ import Navigation from "./links.jsx"
 class Home extends React.Component {
   render () {
     return (
-        <div>
+        <div className="principal">
         <Navigation />
         </div>
     )

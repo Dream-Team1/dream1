@@ -4,12 +4,7 @@ CREATE DATABASE dreams;
 
 USE dreams;
 
-CREATE TABLE comentarios (
-  id int NOT NULL AUTO_INCREMENT,
-  message1 varchar(50) NOT NULL,
-  message2 varchar(500) NOT NULL,
-  PRIMARY KEY (ID)
-);
+
 CREATE TABLE todos (
   id int NOT NULL AUTO_INCREMENT,
   value1 varchar(100) NOT NULL,
@@ -28,6 +23,26 @@ CREATE TABLE info (
   address varchar(500) NOT NULL,
   PRIMARY KEY (ID)
 );
+
+CREATE TABLE comentarios (
+  com_id int(10) NOT NULL AUTO_INCREMENT,
+  message1 varchar(500) NOT NULL,
+  message2 varchar(500) NOT NULL,
+  PRIMARY KEY (com_id)
+)ENGINE=InnoDB;
+
+ALTER TABLE comentarios ADD INDEX com_id_idx (com_id);
+
+CREATE TABLE respuestas (
+    id int(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    comentario varchar(500) NOT NULL,
+    comentarios_com_id int(10),
+    FOREIGN KEY (comentarios_com_id)
+    REFERENCES comentarios(com_id)
+    ON UPDATE CASCADE
+  )ENGINE=InnoDB;
+
+
 
 /*  Execute this file from the command line by typing:
  *    mysql -u root < server/schema.sql
