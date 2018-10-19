@@ -5,13 +5,14 @@ import Forum from "./components/Forum.js";
 import Main from "./components/search.js";
 import {Link} from 'react-router-dom';
 
+
 class HomeBaby extends React.Component {
   render () {
     return (
         <div>
-            
+
             <Link to="/planer">Plan a Party</Link>
-          <h1>Main Home</h1>
+          <h1> Home</h1>
           <Forum />
           <br/>
           <br/>

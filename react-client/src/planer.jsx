@@ -9,13 +9,22 @@ import Calendar from "./components/Calendar.jsx"
   render () {
     return (
         <div>
-          <h1>this is the planner</h1>
-           <TodoList />
-           <Calendar />
-
-
-           <PartyInfo />
-           </div>
+          <h1>Let's Plan Your/My Party</h1>
+          
+          <div className="container">
+            <div className="row">
+              <div className="col-md-3">
+              <TodoList />
+              </div>
+              <div className="col-md-6">
+              <Calendar />
+              </div>
+              <div className="col-md-3">
+              <PartyInfo />
+              </div>
+            </div>
+          </div>
+        </div>
     )
   }
 }

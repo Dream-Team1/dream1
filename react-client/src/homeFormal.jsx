@@ -9,7 +9,7 @@ class HomeFormal extends React.Component {
   render () {
     return (
         <div>
-          
+
             <Link to="/planer">Plan a Party</Link>
           <h1>Main Home</h1>
           <Forum />

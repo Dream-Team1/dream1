@@ -1,10 +1,14 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import "../dist/link.css";
+
 
  const Navigation = () => (
+   <body>
    <div>
      <h1>Party Planer</h1>
      <h2>Start planning a party, select your type of party</h2>
+
      <div className="container">
       <div className="row">
         <div className="col-md-3">
@@ -35,5 +39,6 @@ import {Link} from 'react-router-dom';
     </div>
 
    </div>
+   </body>
  )
  export default Navigation;
