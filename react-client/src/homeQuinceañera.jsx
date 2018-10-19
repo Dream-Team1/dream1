@@ -4,13 +4,14 @@ import Stars from './components/starRating.js';
 import Forum from "./components/Forum.js";
 import Main from "./components/search.js";
 import {Link} from 'react-router-dom';
+import "../dist/quinceañera.css";
 
 
 class Home extends React.Component {
 
   render () {
     return (
-        <div>
+        <div className="quinceañera">
 
             <Link to="/planer">Plan a Party</Link>
             <center>
