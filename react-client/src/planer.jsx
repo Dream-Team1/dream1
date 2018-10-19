@@ -1,8 +1,10 @@
 import React from 'react';
 import TodoList from "./components/planer/TodoList.js";
+//import Share from "./components/planer/ShareNotification.js"
 import PartyInfo from "./components/planer/partyInfo.js"
 import Calendar from "./components/Calendar.jsx"
 import "../dist/planer.css"
+
 
  class Planer extends React.Component {
 

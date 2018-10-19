@@ -12,7 +12,9 @@ class HomeBautizo extends React.Component {
         <div className="bautizo">
 
             <Link to="/planer">Plan a Party</Link>
-          <h1>Main Home</h1>
+            <center>
+          <h1>Plan your baby a awesome bautizo</h1>
+          </center>
           <Forum />
           <br/>
           <br/>
