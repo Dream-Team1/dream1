@@ -39,6 +39,7 @@ import "../dist/link.css"
         <div className="col-md-4">
         <h3> Random </h3>
           <Link to="/random"><img src="https://i.imgur.com/SBWnBH9.jpg" alt="Random party theme" /><br/></Link>
+          
         </div>
       </div>
 
