@@ -31,7 +31,6 @@ CREATE TABLE comentarios (
   PRIMARY KEY (com_id)
 )ENGINE=InnoDB;
 
-ALTER TABLE comentarios ADD INDEX com_id_idx (com_id);
 
 CREATE TABLE respuestas (
     id int(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,

@@ -1,13 +1,13 @@
 import React from 'react';
 import Navigation from "./links.jsx"
 
-class Home extends React.Component {
+class Principal extends React.Component {
   render () {
     return (
-        <div className="principal">
+        <div>
         <Navigation />
         </div>
     )
   }
 }
-export default Home;
+export default Principal;

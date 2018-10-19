@@ -124,12 +124,13 @@ app.get('/info', function(req, res){
 app.post('/comentario', function(req, res){
 
  let comentario = req.body.comentario;
- console.log(comentario);
+ let comentarios_com_id = req.body.comentarios_com_id;
+ console.log(comentarios_com_id);
 
- if(!comentario) {
+ if(!comentario && !comentarios_com_id) {
    res.sendStatus(400);
  } else {
-   database.insertComentario (comentario,(err, results) => {
+   database.insertComentario (comentario,comentarios_com_id,(err, results) => {
      if (err) {
        res.sendStatus(500);
        console.log("this is 500", err);

@@ -101,9 +101,9 @@ var selectComentario = function(callback) {
     }
   });
 };
-var insertComentario = function(comentario, cb) {
- connection.query('INSERT INTO respuestas (comentario) VALUES (?)',
-   [comentario], (err, results, fields) => {
+var insertComentario = function(comentario,comentarios_com_id, cb) {
+ connection.query('INSERT INTO respuestas (comentario,comentarios_com_id) VALUES (?,?)',
+   [comentario,comentarios_com_id], (err, results, fields) => {
      if(err) {
        cb(err, null);
      } else {
