@@ -15,7 +15,7 @@ class Home extends React.Component {
 
             <Link to="/planer">Plan a Party</Link>
             <center>
-          <h1>My Quinceañera</h1>
+          <h1 className="quinceañera">My Quinceañera</h1>
           </center>
           <Forum />
           <br/>

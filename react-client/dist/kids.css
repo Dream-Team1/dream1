@@ -1,3 +1,8 @@
 .kids{
   background-image: url("https://wallpaper.wiki/wp-content/uploads/2017/04/wallpaper.wiki-Background-for-Kids-HD-1-PIC-WPD005858.jpg");
 }
+
+h1.homekids{
+  color: yellow;
+   text-shadow: 2px 2px white;
+}

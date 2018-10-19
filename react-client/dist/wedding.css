@@ -1,3 +1,7 @@
 .wedding{
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwbyaCYA6x5p71Xm6kBZYLUqLgRFcY_TiL6ruQiLoWoz_QB-iF");
 }
+/* the header */
+h1.wedding{
+  color: white;
+}

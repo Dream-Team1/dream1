@@ -13,7 +13,7 @@ class HomeWedding extends React.Component {
 
             <Link to="/planer">Plan a Party</Link>
             <center>
-          <h1>Let's plan our wedding!</h1>
+          <h1 className="wedding">Let's plan our wedding!</h1>
           </center>
           <Forum />
           <br/>

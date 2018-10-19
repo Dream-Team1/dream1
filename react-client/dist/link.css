@@ -1,4 +1,20 @@
+  /* background for home page */
 body{
-background-image: url("https://i.imgur.com/0vY8E.jpg");
+background-image: url("https://st2.depositphotos.com/1043285/11845/i/950/depositphotos_118451660-stock-photo-vintage-cork-background.jpg");
 background-size: cover;
+}
+/*the letters for the links */
+h3{
+  font-family: 'Lobster', cursive;
+color: black;
+}
+/* the home page header */
+h1{
+  color: black;
+  font-weight: bolder;
+}
+/* under the header */
+h2{
+  color: black;
+    font-weight: bolder;
 }
