@@ -55,7 +55,6 @@ getJoined (){
   })
 }
 componentDidMount(){
-  this.getRespuesta();
   this.getJoined();
 }
 
@@ -64,7 +63,7 @@ componentDidMount(){
     return(
       <div>
         <CommentPost commentPost ={this.addRespuesta}/>
-        
+        <CommentList commentList={this.state.joined}/>
       </div>
     );
   }
