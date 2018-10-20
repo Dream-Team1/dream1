@@ -101,6 +101,15 @@ var selectComentario = function(callback) {
     }
   });
 };
+var joined = function(callback) {
+  connection.query('SELECT comentarios.com_id, respuestas.id FROM comentarios INNER JOIN respuestas ON comentarios.com_id = respuestas.comentarios_com_id;', function(err, results, fields) {
+    if(err) {
+      callback(err, null);
+    } else {
+      callback(null, results);
+    }
+  });
+};
 var insertComentario = function(comentario,comentarios_com_id, cb) {
  connection.query('INSERT INTO respuestas (comentario,comentarios_com_id) VALUES (?,?)',
    [comentario,comentarios_com_id], (err, results, fields) => {
@@ -112,6 +121,7 @@ var insertComentario = function(comentario,comentarios_com_id, cb) {
    });
 };
 
+
 module.exports.average = average;
 module.exports.selectAll = selectAll;
 module.exports.insertOne = insertOne;
@@ -122,3 +132,4 @@ module.exports.insertInfo = insertInfo;
 module.exports.selectInfo = selectInfo;
 module.exports.insertComentario=insertComentario;
 module.exports.selectComentario =selectComentario;
+module.exports.joined = joined;
