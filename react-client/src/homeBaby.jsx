@@ -4,14 +4,19 @@ import Stars from './components/starRating.js';
 import Forum from "./components/Forum.js";
 import Main from "./components/search.js";
 import {Link} from 'react-router-dom';
+import "../dist/baby.css"
+
 
 class HomeBaby extends React.Component {
   render () {
     return (
-        <div>
-            
+        <div className="baby">
+
             <Link to="/planer">Plan a Party</Link>
-          <h1>Main Home</h1>
+            <center>
+          <h1>START PLANNING</h1>
+
+          </center>
           <Forum />
           <br/>
           <br/>
@@ -28,6 +33,7 @@ class HomeBaby extends React.Component {
           <br/>
           <FooterPage />
         </div>
+
 
     )
   }
