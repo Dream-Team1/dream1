@@ -6,11 +6,17 @@ import Main from "./components/search.js";
 import {Link} from 'react-router-dom';
 
 class HomeFormal extends React.Component {
+    constructor(props) {
+      super(props);
+
+  }
+
+
+
   render () {
     return (
         <div>
-          
-            <Link to="/planer">Plan a Party</Link>
+        <Link to="/login">Plan a Party</Link>
           <h1>Main Home</h1>
           <Forum />
           <br/>
