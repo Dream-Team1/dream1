@@ -1,7 +1,12 @@
-.map{
-  padding-left: 800px !important;
-}
 
+/*  background image adress with the url quinceañera */
 .quinceañera{
-  background-image: url("http://images6.fanpop.com/image/photos/40000000/S15Q-sweet-15-quinceanera-40015480-720-404.jpg");
+  background-image: url("https://i.imgur.com/c6QstID.jpg?1");
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
