@@ -28,6 +28,15 @@ import "../dist/planer.css"
               <PartyInfo />
               </div>
             </div>
+            <div className="row">
+              <br /><br />
+              <br /><br />
+              <br /><br />
+              <br /><br />
+              <br /><br />
+              <br /><br />
+              <br /><br />
+            </div>
           </div>
           <br/>
           <br/>

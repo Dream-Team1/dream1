@@ -12,6 +12,7 @@ class HomeBaby extends React.Component {
     return (
         <div className="baby">
 
+
             <Link to="/login">Plan a Party</Link>
             <center>
           <h1 className="homebaby">Start Planning</h1>
@@ -33,7 +34,6 @@ class HomeBaby extends React.Component {
           <br/>
           <FooterPage />
         </div>
-
 
     )
   }

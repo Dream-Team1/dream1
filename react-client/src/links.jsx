@@ -5,11 +5,17 @@ import "../dist/link.css";
 
  const Navigation = () => (
    <div>
+<center className="heading">
+ <h1>Ready to start planning the party of your dreams! </h1>
+ <h2>Choose your event</h2>
+</center>
+
 
      <center className="heading">
       <h1>Ready To Start Planning The Party Of Your Dreams! </h1>
       <h2>Choose your event</h2>
      </center>
+
      <div className="container">
       <div className="row">
         <div className="col-md-3">
@@ -17,7 +23,8 @@ import "../dist/link.css";
         <Link to="/baby"><img src="https://i.imgur.com/myLivaS.jpg" alt="Baby Showertheme" /><br/></Link>
         </div>
         <div className="col-md-3">
-        <h3> Wedding </h3>
+          <h3> Wedding </h3>
+
           <Link to="/wedding"><img src="https://i.imgur.com/MzzBCIn.jpg" alt="Weding party theme"  /><br/></Link>
         </div>
         <div className="col-md-3">

@@ -149,7 +149,19 @@ app.get('/comentario', function(req, res){
        res.status(200).json(results);
      }
    })
+});
+app.get('/respuesta', function(req, res){
+  database.joined((err, results) => {
+     if(err) {
+       res.sendStatus(500);
+     } else {
+       res.status(200).json(results);
+       console.log(results);
+     }
+   })
 })
+
+
 
 app.listen(3000, function() {
   console.log('listening on port 3000!');
