@@ -12,26 +12,29 @@ class HomeBaby extends React.Component {
     return (
         <div className="baby">
 
-            <Link to="/planer">Plan a Party</Link>
 
+            <Link to="/login">Plan a Party</Link>
+            <center>
+          <h1 className="homebaby">Start Planning</h1>
 
-            <center><h1>START PLANNING</h1></center>
-              <Forum />
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <Main />
-              <br/>
-              <br/>
-              <Stars />
-              <br/>
-              <br/>
-              <FooterPage />
-            </div>
+          </center>
+          <Forum />
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <Main />
+          <br/>
+          <br/>
+          <Stars />
+          <br/>
+          <br/>
+          <FooterPage />
+        </div>
+
     )
   }
 }
