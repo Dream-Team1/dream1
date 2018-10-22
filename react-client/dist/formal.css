@@ -1,5 +1,11 @@
  .formal{
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHjnQrUTJORlrPhFcgU5-PwNdpJe9RwFAs0dEAxLp08QhCaYx1Ow");
+   background-image: url("https://i.pinimg.com/564x/64/a3/5d/64a35df41a668b031b7ba0b9293cc645.jpg");
+   height: 100%;
+
+   /* Center and scale the image nicely */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
 h1.homeformal{
