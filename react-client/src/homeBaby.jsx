@@ -11,10 +11,7 @@ class HomeBaby extends React.Component {
   render () {
     return (
         <div className="baby">
-
             <Link to="/planer">Plan a Party</Link>
-
-
             <center><h1>START PLANNING</h1></center>
               <Forum />
               <br/>
