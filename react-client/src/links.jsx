@@ -8,6 +8,7 @@ import "../dist/link.css"
  <h1>Ready to start planning the party of your dreams! </h1>
  <h2>Choose your event</h2>
 </center>
+
      <div className="container">
       <div className="row">
         <div className="col-md-3">
@@ -16,6 +17,7 @@ import "../dist/link.css"
         </div>
         <div className="col-md-3">
           <h3> Wedding </h3>
+
           <Link to="/wedding"><img src="https://i.imgur.com/MzzBCIn.jpg" alt="Weding party theme"  /><br/></Link>
         </div>
         <div className="col-md-3">
@@ -39,7 +41,6 @@ import "../dist/link.css"
         <div className="col-md-4">
         <h3> Random </h3>
           <Link to="/random"><img src="https://i.imgur.com/SBWnBH9.jpg" alt="Random party theme" /><br/></Link>
-          
         </div>
       </div>
 

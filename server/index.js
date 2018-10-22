@@ -42,9 +42,7 @@ app.get('todo', function(req, res){
   database.selectTodos((err, results) => {
      if(err) {
        res.sendStatus(500);
-       console.log("error en el server")
      } else {
-      console.log("working on server")
        res.status(200).json(results);
      }
    })
@@ -77,7 +75,6 @@ app.post('/star', function(req, res){
    database.insertRating (val,(err, results) => {
      if (err) {
        res.sendStatus(500);
-       console.log("this is 500", err)
      } else {
        res.status(200).json(results);
      }
@@ -123,6 +120,48 @@ app.get('/info', function(req, res){
      }
    })
 })
+//this is for the comments per post on the Forum
+app.post('/comentario', function(req, res){
+
+ let comentario = req.body.comentario;
+ let comentarios_com_id = req.body.comentarios_com_id;
+ console.log(comentarios_com_id);
+
+ if(!comentario && !comentarios_com_id) {
+   res.sendStatus(400);
+ } else {
+   database.insertComentario (comentario,comentarios_com_id,(err, results) => {
+     if (err) {
+       res.sendStatus(500);
+       console.log("this is 500", err);
+     } else {
+       res.status(200).json(results);
+     }
+   });
+ }
+});
+
+app.get('/comentario', function(req, res){
+  database.selectComentario((err, results) => {
+     if(err) {
+       res.sendStatus(500);
+     } else {
+       res.status(200).json(results);
+     }
+   })
+});
+app.get('/respuesta', function(req, res){
+  database.joined((err, results) => {
+     if(err) {
+       res.sendStatus(500);
+     } else {
+       res.status(200).json(results);
+       console.log(results);
+     }
+   })
+})
+
+
 
 app.listen(3000, function() {
   console.log('listening on port 3000!');
