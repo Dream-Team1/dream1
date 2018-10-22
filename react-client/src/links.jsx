@@ -6,7 +6,7 @@ import "../dist/link.css"
    <div>
 
      <center className="heading">
-      <h1>Ready to start planning the party of your dreams! </h1>
+      <h1>Ready To Start Planning The Party Of Your Dreams! </h1>
       <h2>Choose your event</h2>
      </center>
      <div className="container">

@@ -43,7 +43,7 @@ class PartyInfo extends React.Component {
   render () {
     return (
       <div>
-        <h1>this is the form</h1>
+        <h1 className="partyinfo">this is the form</h1>
         <Info addPost={this.addInfo}/>
       </div>
     )

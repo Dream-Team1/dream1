@@ -4,5 +4,8 @@
 
 h1.homekids{
   color: yellow;
+  font-size: 55px;
    text-shadow: 2px 2px white;
+   font-family: 'Dancing Script', cursive;
+   /* text-shadow: 2px 2px #FF0000; */
 }

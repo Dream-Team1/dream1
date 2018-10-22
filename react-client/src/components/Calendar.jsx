@@ -18,7 +18,7 @@ export default class Calendar extends React.Component {
   render() {
     return (
       <div>
-      <h1>calendar</h1>
+      <h1 className="calendar">Pick Your Special Day!</h1>
         <DayPicker
           selectedDays={this.state.selectedDay}
           onDayClick={this.handleDayClick}

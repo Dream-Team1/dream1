@@ -1,3 +1,16 @@
 body.planer{
-  background-image: url("https://images6.alphacoders.com/459/thumb-1920-459891.jpg");
+  background-image: url("https://i.ytimg.com/vi/N5_35g1nNCc/maxresdefault.jpg");
+}
+/* the header h1 */
+.homeplaner{
+  font-size: 55px;
+}
+/* remove button in plan a party */
+.removeTodo{
+  color: red;
+  background-color: blue;
+  font-family: 'Kaushan Script', cursive;
+  /* font-family: 'Dancing Script', cursive; */
+    /* box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19); */
+    /* text-shadow: 2px 2px #FF0000; */
 }

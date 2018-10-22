@@ -10,7 +10,7 @@ import { SocialIcon } from "react-social-icons";
         color="unique-color-dark"
         className="page-footer font-small pt-0"
       >
-        <div style={{ backgroundColor: "#000080" }}>
+        <div style={{ backgroundColor: "#8e9dff" }}>
           <Container >
             <Row className="py-4 d-flex align-items-center">
               <Col

@@ -4,4 +4,7 @@
 /* the header */
 h1.wedding{
   color: white;
+  font-family: 'Dancing Script', cursive;
+  font-size: 55px;
+  text-shadow: 2px 2px black;
 }

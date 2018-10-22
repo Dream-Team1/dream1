@@ -13,7 +13,7 @@ class HomeRandom extends React.Component {
 
             <Link to="/planer">Plan a Party</Link>
             <center>
-          <h1>YAY! Let's plan our party out! </h1>
+          <h1 className="homerandom">YAY! Let's Plan Our Party Out! </h1>
           </center>
           <Forum />
           <br/>
