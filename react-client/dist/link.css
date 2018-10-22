@@ -87,3 +87,10 @@ h1.calendar{
   /* font-size: 55px; */
   /* text-shadow: 2px 2px #FF0000; */
 }
+/*this is for the images in the home page*/
+.link{
+  border-radius: 15px;
+  border-width: 5px;
+  border-style: solid;
+  color:black;
+}
