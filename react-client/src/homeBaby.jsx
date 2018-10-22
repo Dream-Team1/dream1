@@ -13,6 +13,7 @@ class HomeBaby extends React.Component {
         <div className="baby">
 
             <Link to="/planer">Plan a Party</Link>
+
             <center><h1>START PLANNING</h1></center>
               <Forum />
               <br/>
@@ -30,8 +31,6 @@ class HomeBaby extends React.Component {
               <br/>
               <FooterPage />
             </div>
-
-
     )
   }
 }
