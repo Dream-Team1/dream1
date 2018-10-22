@@ -14,6 +14,7 @@ class HomeBaby extends React.Component {
 
             <Link to="/planer">Plan a Party</Link>
 
+
             <center><h1>START PLANNING</h1></center>
               <Forum />
               <br/>

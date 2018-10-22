@@ -9,6 +9,12 @@ import "../dist/link.css"
  <h2>Choose your event</h2>
 </center>
 
+
+     <center className="heading">
+      <h1>Ready To Start Planning The Party Of Your Dreams! </h1>
+      <h2>Choose your event</h2>
+     </center>
+
      <div className="container">
       <div className="row">
         <div className="col-md-3">

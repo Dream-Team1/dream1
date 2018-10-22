@@ -31,7 +31,7 @@ class TodoList extends React.Component {
   render(){
     return(
       <div className ="todoListMain">
-        <h4>Enter your pending tasks</h4>
+        <h4 className="todolist">Enter your pending tasks</h4>
         <TodoInput  todoText="" addTodo={this.addTodo}/>
         <ul>
         {this.state.todos.map((todo) => {

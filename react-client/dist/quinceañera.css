@@ -11,3 +11,10 @@
   background-size: cover;
 
 }
+/* the header */
+h1.quinceañera{
+  color: red;
+  font-size: 55px;
+  font-family: 'Dancing Script', cursive;
+   text-shadow: 2px 2px black;
+}

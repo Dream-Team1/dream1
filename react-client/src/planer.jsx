@@ -12,7 +12,7 @@ import "../dist/planer.css"
     return (
         <body className="planer">
         <div>
-          <h1>Let's Plan Your/My Party</h1>
+          <center><h1 className="homeplaner">Let's Plan Your/My Party</h1></center>
 
           <div className="container">
             <div className="row">
@@ -36,6 +36,18 @@ import "../dist/planer.css"
               <br /><br />
             </div>
           </div>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
         </div>
         </body>
     )

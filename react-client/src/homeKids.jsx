@@ -13,7 +13,7 @@ class HomeKids extends React.Component {
 
             <Link to="/planer">Plan a Party</Link>
            <center>
-          <h1>Family Reunion!</h1>
+          <h1 className="homekids">Family Reunion!</h1>
           </center>
           <Forum />
           <br/>

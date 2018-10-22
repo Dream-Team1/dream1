@@ -31,7 +31,7 @@ add(){
   render (){
     return(
       <div>
-      <p>Are you looking for a service??
+      <p className="underh1">Are you looking for a service??
        post it here and you will start getting reponces from people</p>
 
        <p className ="textbox">Service Name:</p>
@@ -40,7 +40,7 @@ add(){
          <br />
        <p className ="textbox">Service Description:</p>
        <textarea className="box2" onChange={this.updateMessage2} value={this.state.message2}></textarea>
-      <button className="button2" onClick={this.add}>submit</button>
+      <button className="button2" onClick={this.add}>Submit</button>
      </div>
    );
   }
