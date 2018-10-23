@@ -13,7 +13,7 @@ class ComentariosMain extends React.Component{
     }
     this.addRespuesta = this.addRespuesta.bind(this);
     this.getJoined = this.getJoined.bind(this);
-    this.transform = this.transform.bind(this);
+  
   }
 addRespuesta(comentario){
  $.ajax({
