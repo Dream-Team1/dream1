@@ -2,6 +2,7 @@ import React from 'react';
 import TodoList from "./components/planer/TodoList.js";
 import PartyInfo from "./components/planer/partyInfo.js"
 import Calendar from "./components/Calendar.jsx"
+import fire from './Fire.js';
 import "../dist/planer.css"
 import {Link} from 'react-router-dom';
 
@@ -10,6 +11,7 @@ import {Link} from 'react-router-dom';
   render () {
     return (
 
+          <button><Link to='/'>Logout</Link></button>
         <div className="planer">
         <center><h1 className="homeplaner">Lets start creating your invitations.</h1></center>
           <center><h1 className="homeplaner">Enter the information from the party here:</h1></center>

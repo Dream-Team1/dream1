@@ -11,7 +11,7 @@ class HomeKids extends React.Component {
     return (
         <div className="kids">
 
-            <Link to="/planer">Plan a Party</Link>
+            <Link to="/login">Plan a Party</Link>
            <center>
           <h1 className="homekids">Family Reunion!</h1>
           </center>
