@@ -1,32 +1,34 @@
   /* background for home page */
-body{
-background-image: url("https://st2.depositphotos.com/1043285/11845/i/950/depositphotos_118451660-stock-photo-vintage-cork-background.jpg");
-background-size: cover;
-}
+  body{
+    background-image: url("https://i.imgur.com/vb0GuUQ.jpg");
+    background-repeat: no-repeat;
+    background-position: rigth top;
+      background-size:cover ;
+  }
 
 /*the letters for the links */
 h3{
   font-family: 'Lobster', cursive;
-color: black;
-/* text-shadow: 2px 2px #FF0000; */
-/* font-size: 55px; */
+color: #00CED1;
+text-shadow: 2px 2px #703c72;
+font-size: 25px;
 }
 
 /* the home page header */
 h1{
-  color: black;
+  color:#00CED1;
   font-weight: bolder;
   font-family: 'Dancing Script', cursive;
-  /* font-size: 55px; */
-  /* text-shadow: 2px 2px #FF0000; */
+  font-size: 80px;
+   text-shadow: 3px 3px #703c72;
 }
 
 /* under the header */
 h2{
-  color: black;
+  color: #771557;
     font-weight: bolder;
     /* font-size: 55px; */
-    /* text-shadow: 2px 2px #FF0000; */
+    text-shadow: 2px 2px #00CED1;
 }
 /* service name/description */
 p.textbox{
@@ -84,4 +86,11 @@ h1.calendar{
   color: #4fffdb
   /* font-size: 55px; */
   /* text-shadow: 2px 2px #FF0000; */
+}
+/*this is for the images in the home page*/
+.link{
+  border-radius: 15px;
+  border-width: 5px;
+  border-style: solid;
+  color:black;
 }

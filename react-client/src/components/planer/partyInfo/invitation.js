@@ -1,4 +1,5 @@
 import React from 'react';
+import InfoThings from "./infothings.jsx"
 
 
 
@@ -14,6 +15,7 @@ class Invitation extends React.Component {
       <div>
         <p>This is your Invitation, </p>
         <p>send it to your friends!!!</p>
+        <InfoThings info={props.info} />
 
       </div>
     )

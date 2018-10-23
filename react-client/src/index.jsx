@@ -12,9 +12,13 @@ import HomeKids from "./homeKids.jsx";
 import HomeBaby from "./homeBaby.jsx";
 import HomeFormal from "./homeFormal.jsx";
 import HomeRandom from "./homeRandom.jsx";
+
+import Invitation from "./components/planer/partyInfo/invitation.js"
+
 import Main from "./Main.js";
 import Login from "./LogIn.jsx";
 import LogOut from './LogOut.js';
+
 
 class App extends React.Component {
   render () {
@@ -32,7 +36,7 @@ class App extends React.Component {
               <Route path="/baby" component={HomeBaby}/>
               <Route path="/formal" component={HomeFormal}/>
               <Route path="/random" component={HomeRandom}/>
-
+              <Route path="/invitation" component={Invitation}/>
             </Switch>
           </div>
       </BrowserRouter>
