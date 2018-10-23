@@ -13,7 +13,7 @@ class Home extends React.Component {
     return (
         <div className="quinceañera">
 
-            <Link to="/planer">Plan a Party</Link>
+            <Link to="/login">Plan a Party</Link>
             <center>
           <h1 className="quinceañera">My Quinceañera</h1>
           </center>
