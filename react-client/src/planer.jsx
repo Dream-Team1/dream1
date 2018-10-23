@@ -9,15 +9,10 @@ import {Link} from 'react-router-dom';
  class Planer extends React.Component {
 
   render () {
-    return (
-
-        <body className="planer">
-        <div>
-          <button><Link to='/'>Logout</Link></button>
-          <center><h1 className="homeplaner">Let's Plan Your/My Party</h1></center>
-
+    return (      
 
         <div className="planer">
+        <button><Link to='/'>Logout</Link></button>
         <center><h1 className="homeplaner">Lets start creating your invitations.</h1></center>
           <center><h1 className="homeplaner">Enter the information from the party here:</h1></center>
           <div className="container">
