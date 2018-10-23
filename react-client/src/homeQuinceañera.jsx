@@ -13,9 +13,9 @@ class Home extends React.Component {
     return (
         <div className="quinceañera">
 
-            <Link to="/login">Plan a Party</Link>
+            <button><Link to="/login">Plan a Party</Link></button>
             <center>
-          <h1 className="quinceañera">My Quinceañera</h1>
+          <h1 className="quinceañeraa">My Quinceañera</h1>
           </center>
           <Forum />
           <br/>
