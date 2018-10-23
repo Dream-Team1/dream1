@@ -14,3 +14,11 @@ h1.homeformal{
    text-shadow: 2px 2px white;
    font-family: 'Dancing Script', cursive;
 }
+/* plan a party button */
+.planformal{
+  color: black;
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: 75vw;
+text-shadow: 2px 2px gray;
+}

@@ -86,10 +86,8 @@ const Main = compose(withProps({
   }
 
 }), withScriptjs, withGoogleMap)(props =>
-<div className="container">
-  <div className="row">
-    <div className="col-md-6">
-      <GoogleMap
+<div id="mapa">
+      <GoogleMap className="mapa"
         ref={props.onMapMounted}
         defaultZoom={15}
         center={props.center}
@@ -122,9 +120,6 @@ const Main = compose(withProps({
           .markers
           .map((marker, index) => <Marker key={index} position={marker.position}/>)}
       </GoogleMap>
-    </div>
-      <div className="container">
-    <div className="col-md-6">
       {props
         .places
         .map(({place_id, formatted_address, rating, name}) =>
@@ -133,9 +128,6 @@ const Main = compose(withProps({
           <p className="entrie-address">{formatted_address}</p>
           <p className="entrie-rating">Rating:{rating}</p>
         </div>)}
-    </div>
-    </div>
-  </div>
 </div>);
 
 export default Main;

@@ -10,7 +10,29 @@ body.planer{
   color: red;
   background-color: blue;
   font-family: 'Kaushan Script', cursive;
+  border-radius: 55px;
+
   /* font-family: 'Dancing Script', cursive; */
     /* box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19); */
     /* text-shadow: 2px 2px #FF0000; */
+}
+/* done button */
+.donebutton{
+  color: black;
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: 75vw;
+text-shadow: 2px 2px gray;
+}
+/* inputbox  */
+.inputbox{
+  border-radius: 55px;
+}
+/* textarea */
+.areatext{
+  border-radius: 55px;
+}
+/*form button  */
+.infobutton{
+  border-radius: 55px;
 }

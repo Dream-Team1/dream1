@@ -23,7 +23,7 @@ agregar(){
   render(){
     return(
       <div>
-        <input className = "comentario" onChange = {this.updateComentario}
+        <input className = "inputbox" onChange = {this.updateComentario}
         value = {this.state.comentario}></input>
         <button className = "boton" onClick ={this.agregar}>Submit</button>
       </div>

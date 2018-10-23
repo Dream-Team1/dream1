@@ -40,14 +40,14 @@ add(){
     return(
       <div>
        <p>Name of party owner:</p>
-       <input  onChange={this.updateName} value={this.state.name}></input>
+       <input className="inputbox"  onChange={this.updateName} value={this.state.name}></input>
         <br />
         <br />
         <p>Party Details:</p>
-       <textarea onChange={this.updateDetails} value={this.state.details}></textarea>
+       <textarea className="areatext" onChange={this.updateDetails} value={this.state.details}></textarea>
        <p>Party address:</p>
-      <textarea onChange={this.updateAddress} value={this.state.address}></textarea>
-      <button onClick={this.add}>submit</button>
+      <textarea className="areatext" onChange={this.updateAddress} value={this.state.address}></textarea>
+      <button className="infobutton" onClick={this.add}>submit</button>
      </div>
    );
   }
