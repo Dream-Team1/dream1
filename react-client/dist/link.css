@@ -39,7 +39,6 @@ p.textbox{
 /* text under the header */
 p.underh1{
   color: black;
-  font-family: 'Caveat', sans-serif;
   font-size: 30px;
   /* text-shadow: 2px 2px #FF0000; */
 }
@@ -58,8 +57,7 @@ p.underh1{
 }
 /* button for service desscription */
 .button2{
-background-color: red;
-font-family: 'Kaushan Script', cursive;
+background-color: grey;
 /* font-size: 55px; */
 /* text-shadow: 2px 2px #FF0000; */
 }

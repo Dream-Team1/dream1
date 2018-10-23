@@ -32,7 +32,7 @@ add(){
     return(
       <div>
       <p className="underh1">Are you looking for a service??
-       post it here and you will start getting reponces from people</p>
+       post it here and you will start getting responses from people</p>
 
        <p className ="textbox">Type of service:</p>
         <input className="box1" onChange={this.updateMessage1} value={this.state.message1}></input>
