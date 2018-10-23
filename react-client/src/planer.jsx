@@ -10,9 +10,9 @@ import {Link} from 'react-router-dom';
 
   render () {
     return (
-
+      <div className="planer">
           <button><Link to='/'>Logout</Link></button>
-        <div className="planer">
+
         <button><Link to='/'>Logout</Link></button>
         <center><h1 className="homeplaner">Lets start creating your invitations.</h1></center>
           <center><h1 className="homeplaner">Enter the information from the party here:</h1></center>
