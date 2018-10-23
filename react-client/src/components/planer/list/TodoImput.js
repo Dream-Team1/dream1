@@ -35,6 +35,7 @@ class TodoInput extends React.Component{
      this.getPost();
    });
  }
+
    getTodo (){
     $.ajax({
       url: '/todo',
