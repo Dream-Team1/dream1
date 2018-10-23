@@ -39,7 +39,6 @@ p.textbox{
 /* text under the header */
 p.underh1{
   color: black;
-  font-family: 'Caveat', sans-serif;
   font-size: 30px;
   /* text-shadow: 2px 2px #FF0000; */
 }

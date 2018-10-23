@@ -111,7 +111,6 @@ const Main = compose(withProps({
             boxShadow: `0 2px 6px rgba(0, 0, 0, 0.3)`,
             fontSize: `16px`,
             border: `black`,
-            textOverflow: `ellipses`,
             color: `#f87800`
           }}/>
 
@@ -126,7 +125,8 @@ const Main = compose(withProps({
         <div className="entries" key={place_id}>
           <h4 className="entrie-name">{name}</h4>
           <p className="entrie-address">{formatted_address}</p>
-          <p className="entrie-rating">Rating:{rating}</p>
+          <p className="entrie-rating">
+          <img src="https://i.imgur.com/8b7ptSI.png" height="20" width="20"></img>{rating}</p>
         </div>)}
 </div>);
 
