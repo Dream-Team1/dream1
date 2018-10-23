@@ -15,6 +15,8 @@ import HomeRandom from "./homeRandom.jsx";
 import Main from "./Main.js";
 import Login from "./LogIn.jsx";
 import LogOut from './LogOut.js';
+import Invitation from "./components/planer/partyInfo/invitation.js"
+
 
 class App extends React.Component {
 

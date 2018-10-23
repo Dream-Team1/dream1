@@ -8,10 +8,12 @@ class ComentariosMain extends React.Component{
     super(props);
     this.state = {
       com_foreignKey: this.props.postID,
-      respuestas:[]
+      respuestas:[],
+      joined:[]
     }
     this.addRespuesta = this.addRespuesta.bind(this);
-    this.getRespuesta = this.getRespuesta.bind(this);
+    this.getJoined = this.getJoined.bind(this);
+  
   }
 addRespuesta(comentario){
  $.ajax({
@@ -20,18 +22,21 @@ addRespuesta(comentario){
    contentType: 'application/json',
    data: JSON.stringify({
      comentario: comentario,
-     comentarios_com_id: this.state.com_foreignKey
+     comentarios_com_id: this.state.com_foreignKey,
+     objeto: undefined
    })
  }).done(() => {
    this.getRespuesta();
  });
 }
-getRespuesta (){
+
+
+getJoined (){
   $.ajax({
-  url: '/comentario',
+  url: '/respuesta',
   method: 'GET',
   success: (results) => {
-    this.setState({respuestas:results});
+    this.setState({joined:results});
   },
   error: (xhr, err) => {
     console.log('err', err);
@@ -39,13 +44,30 @@ getRespuesta (){
   })
 }
 componentDidMount(){
-  this.getRespuesta();
+  this.getJoined();
 }
+
+// function array (arr)
+// {
+//  var newObj={}
+// for(var i=0; i < arr.length; i++){
+//
+//  if(newObj[arr[i].message1] === undefined) {
+//    newObj[arr[i].message1] = [arr[i].comentario]
+//  } else {
+//    newObj[arr[i].message1].push(arr[i].comentario)
+//  }
+// }
+// return newObj;
+// }
+
   render(){
+    console.log("this is joined",this.state.joined);
+
     return(
       <div>
+
         <CommentPost commentPost ={this.addRespuesta}/>
-       <CommentList respuestas={this.state.respuestas}/>
       </div>
     );
   }

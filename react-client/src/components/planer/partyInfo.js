@@ -2,7 +2,7 @@ import React from 'react';
 import Info from "./partyInfo/info.js";
 
 
-class PartyInfo extends React.Component {
+ class PartyInfo extends React.Component {
   constructor(props){
     super(props);
     this.state = {
