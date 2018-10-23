@@ -6,6 +6,7 @@ import Main from "./components/search.js";
 import {Link} from 'react-router-dom';
 import "../dist/bautizo.css"
 
+
 class HomeBautizo extends React.Component {
   render () {
     return (

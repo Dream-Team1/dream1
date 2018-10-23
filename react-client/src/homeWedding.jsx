@@ -5,6 +5,7 @@ import Forum from "./components/Forum.js";
 import Main from "./components/search.js";
 import {Link} from 'react-router-dom';
 import "../dist/wedding.css";
+import ComentariosMain from "./components/FORO/comments/commentsMain.js"
 
 class HomeWedding extends React.Component {
   render () {
@@ -13,9 +14,10 @@ class HomeWedding extends React.Component {
 
             <Link to="/login">Plan a Party</Link>
             <center>
-          <h1 className="wedding">Let's plan our wedding!</h1>
+          <h1 className="boda">Let's plan our wedding!</h1>
           </center>
           <Forum />
+          
           <br/>
           <br/>
           <br/>

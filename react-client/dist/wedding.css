@@ -1,9 +1,12 @@
 .wedding{
   background-image: url("https://i.imgur.com/Ie2SKcK.jpg");
   background-size: 1500px 1250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /* the header */
-h1.wedding{
+h1.boda{
   color: white;
   font-family: 'Dancing Script', cursive;
   font-size: 55px;

@@ -32,7 +32,7 @@ constructor(props){
       url: '/Forum',
       method: 'GET',
     success: (results) => {
-      this.setState({posts:results});    
+      this.setState({posts:results});
     },
     error: (xhr, err) => {
       console.log('err', err);
