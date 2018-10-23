@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import fire from './Fire.js';
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 import Planer from "./planer.jsx";
 import Home from "./homeQuinceañera.jsx";
