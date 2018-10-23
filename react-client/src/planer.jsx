@@ -9,8 +9,9 @@ import {Link} from 'react-router-dom';
  class Planer extends React.Component {
 
   render () {
-    return (      
+    return (
 
+          <button><Link to='/'>Logout</Link></button>
         <div className="planer">
         <button><Link to='/'>Logout</Link></button>
         <center><h1 className="homeplaner">Lets start creating your invitations.</h1></center>
