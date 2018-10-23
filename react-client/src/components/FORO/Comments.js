@@ -7,7 +7,7 @@ constructor(props){
       message1:"",
       message2:""
   }
-      this.add = this.add.bind(this);
+  this.add = this.add.bind(this);
   this.updateMessage1 = this.updateMessage1.bind(this);
   this.updateMessage2 = this.updateMessage2.bind(this);
 }
@@ -34,11 +34,11 @@ add(){
       <p className="underh1">Are you looking for a service??
        post it here and you will start getting reponces from people</p>
 
-       <p className ="textbox">Service Name:</p>
+       <p className ="textbox">Type of service:</p>
         <input className="box1" onChange={this.updateMessage1} value={this.state.message1}></input>
          <br />
          <br />
-       <p className ="textbox">Service Description:</p>
+       <p className ="textbox">Description:</p>
        <textarea className="box2" onChange={this.updateMessage2} value={this.state.message2}></textarea>
       <button className="button2" onClick={this.add}>Submit</button>
      </div>

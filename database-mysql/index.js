@@ -102,7 +102,7 @@ var selectComentario = function(callback) {
   });
 };
 var joined = function(callback) {
-  connection.query('SELECT com_id,message1, message2, id,comentario FROM comentarios INNER JOIN respuestas ON comentarios.com_id = respuestas.comentarios_com_id;', function(err, results, fields) {
+  connection.query('SELECT com_id,message1, message2, id,comentario FROM comentarios LEFT JOIN respuestas ON comentarios.com_id = respuestas.comentarios_com_id;', function(err, results, fields) {
     if(err) {
       callback(err, null);
     } else {
