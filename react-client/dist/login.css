@@ -4,10 +4,10 @@ background-repeat: no-repeat;
   background-size: 1300px 1100px;
 }
 /* the heder of the login */
-h1.loginn{
-
-    font-size: 100px;
-    text-shadow: 2px 2px #FF0000;
+.loginn{
+  color: black;
+  font-size: 60px;
+    font-weight: bold;
 }
 .form-group{
   color:black;

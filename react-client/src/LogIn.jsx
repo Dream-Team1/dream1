@@ -45,7 +45,7 @@ render() {
     </div>
     <br/>
     <br/>
-    <center><h1 className="loginn">Start your planning</h1></center>
+    <center><h1 className="loginn">Login to continue planning your party!!</h1></center>
     <br/>
     <br/>
     <br/>
@@ -63,8 +63,8 @@ render() {
     <label htmlFor="exampleInputPassword1">Password</label>
     <input value={this.state.password} onChange={this.handleChange} type="password" name="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
     </div>
-    <button type="submit" onClick={this.login} className="btn btn-primary">Login</button>
-    <button onClick={this.signup} style={{marginLeft: '25px'}} className="btn btn-success">Signup</button>
+    <button className="infobutton" type="submit" onClick={this.login}>Login</button>
+    <button className="infobutton" onClick={this.signup} style={{marginLeft: '25px'}}>Signup</button>
     </form>
     <br/>
     <br/>
