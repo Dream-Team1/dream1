@@ -92,3 +92,8 @@ h1.calendar{
   border-style: solid;
   color:black;
 }
+/*this is for the contact icons*/
+.leftSideBar{
+  position: relative;
+  bottom: 40%;
+}

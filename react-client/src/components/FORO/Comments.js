@@ -31,9 +31,9 @@ add(){
   render (){
     return(
       <div>
-      <p className="underh1">Are you looking for a service??
-       post it here and you will start getting responses from people</p>
-
+      <h3>Need a service? <br />
+      post it here to start<br />
+      getting responces from other people</h3>
        <p className ="textbox">Type of service:</p>
         <input className="box1" onChange={this.updateMessage1} value={this.state.message1}></input>
          <br />

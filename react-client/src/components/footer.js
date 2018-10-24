@@ -10,7 +10,7 @@ import { SocialIcon } from "react-social-icons";
         color="unique-color-dark"
         className="page-footer font-small pt-0"
       >
-        <div style={{ backgroundColor: "#8e9dff" }}>
+        <div style={{ backgroundColor: "" }}>
           <Container >
             <Row className="py-4 d-flex align-items-center">
               <Col
@@ -23,21 +23,7 @@ import { SocialIcon } from "react-social-icons";
                 lg="7"
                 className="text-center text-md-right"
               >
-                <SocialIcon
-                  network="twitter"
-                  color="#00aced"
-                  url="https://twitter.com/?lang=en"
-                />
-                <SocialIcon
-                  network="facebook"
-                  color="#3b5998"
-                  url="https://www.facebook.com/code.dreamteam.5"
-                />
-                <a href="mailto:dreamteam2018hc@gmail.com"> <SocialIcon
-                 network="google"
-                 color="#bc2a8d"
-
-               /></a>
+            
                <div className = "fb-share-button"
                data-href = "https://www.facebook.com/code.dreamteam.5"
                data-layout = "button_count"

@@ -12,14 +12,15 @@ const Main = compose(withProps({
   googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyBD2x3uoBXe8vWtIaBkvRvlrD9msa-X" +
       "hnM&v=3.exp&libraries=geometry,drawing,places",
   loadingElement: <div style={{
-    height: `100%`
+    height: `500%`
   }}/>,
   containerElement: <div className="mapp" style={{
-    height: `500px`,
-    width: `500px`
+    height: `450px`
   }}/>,
   mapElement: <div style={{
-      height: `100%`
+    height: `90%`,
+    width: `60%`,
+    margin: `0 auto`
     }}/>
 }), lifecycle({
   componentDidMount() {
@@ -86,9 +87,10 @@ const Main = compose(withProps({
   }
 
 }), withScriptjs, withGoogleMap)(props =>
-<div className="container">
-  <div className="row">
-    <div className="col-md-6">
+    <div>
+    <div className="columns">
+      <div className="column">
+
       <GoogleMap
         ref={props.onMapMounted}
         defaultZoom={15}
@@ -113,7 +115,7 @@ const Main = compose(withProps({
             boxShadow: `0 2px 6px rgba(0, 0, 0, 0.3)`,
             fontSize: `16px`,
             border: `black`,
-            color: `#f87800`
+            color: `black`
           }}/>
 
         </SearchBox>
@@ -121,9 +123,14 @@ const Main = compose(withProps({
           .markers
           .map((marker, index) => <Marker key={index} position={marker.position}/>)}
       </GoogleMap>
-    </div>
-      <div className="container">
-    <div className="col-md-6">
+      </div>
+    <div className="maplist">
+    <div className="column">
+
+    <div className="block">
+      <article className="message">
+        <div className="message-body">
+
       {props
         .places
         .map(({place_id, formatted_address, rating, name}) =>
@@ -134,8 +141,14 @@ const Main = compose(withProps({
           <img src="https://i.imgur.com/8b7ptSI.png" height="20" width="20"></img>{rating}</p>
         </div>)}
     </div>
+    </article>
     </div>
-  </div>
-</div>);
+
+    </div>
+    </div>
+    </div>
+    </div>
+
+);
 
 export default Main;
