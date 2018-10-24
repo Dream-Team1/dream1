@@ -33,6 +33,7 @@ class App extends React.Component {
              <Route path="/baby" component={HomeBaby}/>
              <Route path="/formal" component={HomeFormal}/>
              <Route path="/random" component={HomeRandom}/>
+             <Route path="/invitation" component={Invitation}/>
 
            </Switch>
      </BrowserRouter>

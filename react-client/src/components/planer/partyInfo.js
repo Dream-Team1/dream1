@@ -6,10 +6,9 @@ import Info from "./partyInfo/info.js";
   constructor(props){
     super(props);
     this.state = {
-      info: []
+    
     };
     this.addInfo =this.addInfo.bind(this);
-     this.getInfo =this.getInfo.bind(this);
   }
   addInfo(name, details,address){
    $.ajax({
@@ -23,22 +22,6 @@ import Info from "./partyInfo/info.js";
      })
    })
  }
-   getInfo (){
-    $.ajax({
-      url: '/info',
-      method: 'GET',
-    success: (results) => {
-      this.setState({info:results});
-      console.log( results);
-    },
-    error: (xhr, err) => {
-      console.log('err', err);
-      }
-    })
-  }
-    componentDidMount(){
-    this.getInfo();
-  }
 
   render () {
     return (
