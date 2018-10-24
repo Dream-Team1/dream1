@@ -13,7 +13,7 @@ class HomeFormal extends React.Component {
         <div className="formal">
 
             <Link className="planformal" to="/login">Plan a Party</Link>
-            <center><h1 className="homeformal">let's party</h1></center>
+            <center><h1 className="homeformal">let's party!!</h1></center>
             <h3 className="text">Find the most rated place to buy your party needs:</h3>
               <Main />
               <br/>

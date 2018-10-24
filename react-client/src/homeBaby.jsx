@@ -13,14 +13,9 @@ class HomeBaby extends React.Component {
         <div className="baby">
 
         <Link className="planparty" to="/login">Plan a Party</Link>
-            <center><h1>START PLANNING</h1></center>
+            <center><h1>Baby Shower</h1></center>
             <h3 className="text">Find the most rated place to buy your party needs:</h3>
               <Main />
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
               <br/>
               <br/>
             <Forum />

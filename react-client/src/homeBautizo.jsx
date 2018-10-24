@@ -13,14 +13,9 @@ class HomeBautizo extends React.Component {
         <div className="bautizo">
 
             <Link className="planbautizo" to="/login">Plan a Party</Link>
-            <center><h1 className="homebautizo">Plan your baby a awesome bautizo</h1></center>
+            <center><h1 className="homebautizo">Plan your baby an awesome bautizo</h1></center>
             <h3 className="text">Find the most rated place to buy your party needs:</h3>
               <Main />
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
               <br/>
               <br/>
             <Forum />

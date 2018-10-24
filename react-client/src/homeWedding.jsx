@@ -14,7 +14,7 @@ class HomeWedding extends React.Component {
         <div className="wedding">
 
             <Link className="planwedding" to="/login">Plan a Party</Link>
-            <center><h1 className="boda">Let's plan our wedding!</h1></center>
+            <center><h1 className="boda">Let's plan your wedding!</h1></center>
             <h3 className="text">Find the most rated place to buy your party needs:</h3>
               <Main />
               <br/>
