@@ -98,19 +98,32 @@ h1.calendar{
 /* map header */
 .entrie-name{
   color: black;
-    font-size: 30px;
+     font-size: 15px;
     font-weight: bold;
 }
 /* map address */
 .entrie-address{
-    font-size: 20px;
+    font-size: 10px;
+    font-weight: bold;
+    color: black;
 }
 /* rating stars */
-.entrie-rating{
-  font-size: 15px;
+p{
 
+  font-weight: bold;
+  color: black;
 }
 /*this is for the contact icons*/
 .leftSideBar{
   position: relative;
   bottom: 40%;
+}
+
+/*this is for the text in all home components*/
+.text{
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  font-family:sans-serif;
+  text-shadow: 2px 2px #FF0000; 
+}

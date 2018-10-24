@@ -1,5 +1,4 @@
 import React from 'react';
-import FooterPage from "./components/footer.js";
 import Stars from './components/starRating.js';
 import Forum from "./components/Forum.js";
 import Main from "./components/search.js";
@@ -15,7 +14,7 @@ class HomeBaby extends React.Component {
 
         <Link className="planparty" to="/login">Plan a Party</Link>
             <center><h1>START PLANNING</h1></center>
-            <h3>Find the most rated place to buy your party needs:</h3>
+            <h3 className="text">Find the most rated place to buy your party needs:</h3>
               <Main />
               <br/>
               <br/>
@@ -23,7 +22,7 @@ class HomeBaby extends React.Component {
               <br/>
               <br/>
               <br/>
-              <br/>            
+              <br/>
             <Forum />
               <div className ="leftSideBar">
               <ul>
@@ -47,7 +46,7 @@ class HomeBaby extends React.Component {
                /></a></li>
                </ul>
                </div>
-               <h3>Dont forget to rate this page!!!</h3>
+               <h3 className="text">Dont forget to rate this page!!!</h3>
                <Stars />
             </div>
     )

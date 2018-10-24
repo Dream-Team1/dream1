@@ -137,8 +137,8 @@ const Main = compose(withProps({
         <div className="entries" key={place_id}>
           <h4 className="entrie-name">{name}</h4>
           <p className="entrie-address">{formatted_address}</p>
-          <p>
-          <img src="https://i.imgur.com/8b7ptSI.png" height="20" width="20"></img><p className="entrie-rating">{rating}</p></p>
+          <p className=".entrie-rating">
+          <img src="https://i.imgur.com/8b7ptSI.png" height="20" width="20"></img>{rating}</p>
         </div>)}
     </div>
     </article>
