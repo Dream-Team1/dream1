@@ -4,19 +4,12 @@ background-repeat: no-repeat;
   background-size: 1300px 1100px;
 }
 /* the heder of the login */
-h1.login{
+h1.loginn{
+
     font-size: 100px;
     text-shadow: 2px 2px #FF0000;
 }
-.email{
-  color:black;
-  font-size: 30px;
-   /* text-shadow: 2px 2px white; */
-   /* font-family: 'Dancing Script', cursive; */
-   /* text-shadow: 2px 2px #FF0000; */
-}
-/*  */
-.password{
+.form-group{
   color:black;
   font-size: 30px;
    /* text-shadow: 2px 2px white; */
