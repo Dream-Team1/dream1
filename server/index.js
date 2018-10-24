@@ -38,10 +38,10 @@ app.post('/Forum', function(req, res){
 });
 
 //this are the requests for the todo pending tasks
-app.get('todo', function(req, res){
+app.get('/todo', function(req, res){
   database.selectTodos((err, results) => {
      if(err) {
-       res.sendStatus(500);
+       res.sendStatus(500);       
      } else {
        res.status(200).json(results);
      }

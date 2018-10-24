@@ -1,5 +1,5 @@
 import React from 'react';
-import TodoList from "./components/planer/TodoList.js";
+import TodoMain from "./components/planer/TodoMain.js";
 import PartyInfo from "./components/planer/partyInfo.js"
 import Calendar from "./components/Calendar.jsx"
 import fire from './Fire.js';
@@ -19,7 +19,7 @@ import {Link} from 'react-router-dom';
           <div className="container">
             <div className="row">
               <div className="col-md-3">
-              <TodoList />
+              <TodoMain />
               </div>
               <div className="col-md-6">
               <Calendar />

@@ -42,7 +42,6 @@ var insertTodos = function(value1, cb) {
  connection.query('INSERT INTO todos (value1) VALUES (?)',
    [value1], (err, results, fields) => {
      if(err) {
-       console.log("this is database post")
        cb(err, null);
      } else {
        cb(null, results);

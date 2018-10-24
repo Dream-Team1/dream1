@@ -1,20 +1,31 @@
-import React from "react";
+// import React from 'react';
+// import Remove from "./remove.jsx";
+//
+// const TodoItem = (props) => (
+//   <div>
+//     <span>{props.todo.value1}</span> <button>Remove</button>
+//
+//   </div>
+// )
+//
+// export default TodoItem;
 
-class TodoItem extends React.Component{
-  constructor(props){
-    super(props);
+import React from 'react';
+
+class TodoItem extends React.Component  {
+constructor(props){
+  super(props);
+  this.state = {
   }
+}
 
-
-  removeTodo(id){
-    this.props.removeTodo(id);
-  }
-  render(){
+  render (){
     return(
-      <div className="todoItem">
-      <button className="removeTodo" onClick={(e)=> this.removeTodo(this.props.id)}>remove</button>{this.props.todo.text}
+      <div>
+        <span>{this.props.todo.value1}</span> <button>Remove</button>
+
       </div>
-    )
+   );
   }
 }
 export default TodoItem;
