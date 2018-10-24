@@ -11,7 +11,7 @@ class HomeRandom extends React.Component {
     return (
         <div className="random">
 
-            <Link to="/login">Plan a Party</Link>
+            <Link className="planrandom" to="/login">Plan a Party</Link>
             <center>
           <h1 className="homerandom">YAY! Let's Plan Our Party Out! </h1>
           </center>

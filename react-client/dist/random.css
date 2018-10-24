@@ -9,3 +9,11 @@ h1.homerandom{
   font-size: 55px;
 
 }
+/* plan a party button */
+.planrandom{
+  color: black;
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: 75vw;
+text-shadow: 2px 2px gray;
+}

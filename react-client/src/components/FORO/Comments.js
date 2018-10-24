@@ -35,11 +35,11 @@ add(){
       post it here to start<br />
       getting responces from other people</h3>
        <p className ="textbox">Type of service:</p>
-        <input className="box1" onChange={this.updateMessage1} value={this.state.message1}></input>
+        <input className="inputbox" onChange={this.updateMessage1} value={this.state.message1}></input>
          <br />
          <br />
        <p className ="textbox">Description:</p>
-       <textarea className="box2" onChange={this.updateMessage2} value={this.state.message2}></textarea>
+       <textarea className="areatext" onChange={this.updateMessage2} value={this.state.message2}></textarea>
       <button className="button2" onClick={this.add}>Submit</button>
      </div>
    );

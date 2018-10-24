@@ -11,9 +11,9 @@ import {Link} from 'react-router-dom';
   render () {
     return (
       <div className="planer">
-          <button><Link to='/'>Logout</Link></button>
 
-        <button><Link to='/'>Logout</Link></button>
+
+        <Link className="outbutton" to='/'>Logout</Link>
         <center><h1 className="homeplaner">Lets start creating your invitations.</h1></center>
           <center><h1 className="homeplaner">Enter the information from the party here:</h1></center>
           <div className="container">
@@ -36,9 +36,9 @@ import {Link} from 'react-router-dom';
               <br /><br />
               <br /><br />
               <br /><br />
+              <Link className="donebutton" to="/invitation">Done</Link>
             </div>
           </div>
-          <Link to="/invitation">Done</Link>
         </div>
 
     )

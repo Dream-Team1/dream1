@@ -51,19 +51,22 @@ p.underh1{
 /* color for the comentario button  */
 .boton{
   color: black;
-  font-family: 'Kaushan Script', cursive;
+  /* font-family: 'Kaushan Script', cursive; */
+  border-radius: 55px;
   /* font-size: 55px; */
   /* text-shadow: 2px 2px #FF0000; */
 }
 /* button for service desscription */
 .button2{
-background-color: grey;
+/* background-color: red; */
+/* font-family: 'Kaushan Script', cursive; */
+border-radius: 55px;
 /* font-size: 55px; */
 /* text-shadow: 2px 2px #FF0000; */
 }
 /*color inside  the description box*/
 .box2{
-  color: green;
+  color: black;
   /* font-size: 55px; */
   /* text-shadow: 2px 2px #FF0000; */
 }
@@ -75,7 +78,7 @@ background-color: grey;
 }
 /* font for the tasks h4 */
 .todoListMain{
-  color: red;
+  /* color: red; */
   /* font-size: 55px; */
   /* text-shadow: 2px 2px #FF0000; */
 }
@@ -92,8 +95,22 @@ h1.calendar{
   border-style: solid;
   color:black;
 }
+/* map header */
+.entrie-name{
+  color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+/* map address */
+.entrie-address{
+    font-size: 20px;
+}
+/* rating stars */
+.entrie-rating{
+  font-size: 15px;
+
+}
 /*this is for the contact icons*/
 .leftSideBar{
   position: relative;
   bottom: 40%;
-}
