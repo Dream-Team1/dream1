@@ -19,6 +19,7 @@ export default class Calendar extends React.Component {
     return (
       <div>
       <h1 className="calendar">Pick Your Special Day!</h1>
+        <div className="calendersize" style= {{width:`200%`}}>
         <DayPicker
           selectedDays={this.state.selectedDay}
           onDayClick={this.handleDayClick}
@@ -28,6 +29,7 @@ export default class Calendar extends React.Component {
             ? this.state.selectedDay.toLocaleDateString()
             : 'Please select a day '}
         </p>
+        </div>
       </div>
     );
   }
