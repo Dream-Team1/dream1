@@ -6,11 +6,11 @@ import Info from "./partyInfo/info.js";
   constructor(props){
     super(props);
     this.state = {
-    
+
     };
     this.addInfo =this.addInfo.bind(this);
   }
-  addInfo(name, details,address){
+  addInfo(name, details,address,title){
    $.ajax({
      method: "POST",
       url: "/info",
@@ -18,7 +18,8 @@ import Info from "./partyInfo/info.js";
      data: JSON.stringify({
        name: name,
        details:details,
-       address:address
+       address:address,
+       title:title
      })
    })
  }

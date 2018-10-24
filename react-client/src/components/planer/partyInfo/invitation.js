@@ -31,8 +31,8 @@ class Invitation extends React.Component {
   render () {
     return (
       <div>
-        <p>You are invited!!</p>
-        <p>This is an invitation to my party/event.</p>
+        <p>You are invited!!</p><br /><br /><br />
+        <p>This is an invitation to my party/event.</p><br /><br /><br />
         <InfoThings info={this.state.info} />
 
       </div>
