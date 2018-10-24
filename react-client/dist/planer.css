@@ -1,5 +1,8 @@
 body.planer{
   background-image: url("https://i.ytimg.com/vi/N5_35g1nNCc/maxresdefault.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /* the header h1 */
 .homeplaner{
