@@ -25,13 +25,13 @@ AUTHOR
 TEAM: Dream Team
 https://github.com/Dream-Team1
 
-member:
-Sthefania(product owner)
-Jose(scrum master)
-Jessica(developer)
-Albert(developer)
+MEMBERS:
+Sthefania Rodriguez(product owner)
+Jose Torres(scrum master)
+Jessica Gonzalez(developer)
+Albert Sanchez(developer)
 
-stack:
+TECHNICAL STACK:
 React
 React router
 react bootstrap
