@@ -14,7 +14,7 @@ class HomeBautizo extends React.Component {
 
             <Link className="planbautizo" to="/login">Plan a Party</Link>
             <center><h1 className="homebautizo">Plan your baby an awesome bautizo</h1></center>
-            <h3 className="text">Find the most rated place to buy your party needs:</h3>
+            <h3 className="textb">Find the most rated place to buy your party needs:</h3>
               <Main />
               <br/>
               <br/>
@@ -41,7 +41,7 @@ class HomeBautizo extends React.Component {
                /></a></li>
                </ul>
                </div>
-               <h3 className="text">Dont forget to rate this page!!!</h3>
+               <h3 className="textb2">Dont forget to rate this page!!!</h3>
                <Stars />
         </div>
 

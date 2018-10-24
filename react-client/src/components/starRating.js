@@ -46,7 +46,7 @@ class Stars extends React.Component {
       <div>
 
        <Rating onChange={this.handleRating.bind(this)} />
-       <div>{this.state.starRating}</div>
+       <div className="num">{this.state.starRating}</div>
 
       </div>
       // </form>

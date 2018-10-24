@@ -122,8 +122,13 @@ p{
 /*this is for the text in all home components*/
 .text{
   color: black;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bold;
   font-family:sans-serif;
-  text-shadow: 2px 2px #FF0000; 
+  text-shadow: 2px 2px #d3a0d1;
+}
+.num{
+  font-weight: bold;
+  color: black;
+  font-size: 25px;
 }
