@@ -31,9 +31,6 @@ add(){
   render (){
     return(
       <div>
-       <p className ="serv">Type of service:</p>
-        <input className="inputbox" onChange={this.updateMessage1} value={this.state.message1}></input>
-         <br />
          <br />
        <p className ="serv">Description:</p>
        <textarea className="areatext" onChange={this.updateMessage2} value={this.state.message2}></textarea>
@@ -43,3 +40,6 @@ add(){
   }
 }
 export default Comments;
+// <p className ="serv">Type of service:</p>
+//  <input className="inputbox" onChange={this.updateMessage1} value={this.state.message1}></input>
+//   <br />

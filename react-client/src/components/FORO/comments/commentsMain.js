@@ -96,8 +96,8 @@ console.log("respuestas",this.state.respuestas)
     return(
       <div>
       { this.state.preguntasArr.map((pregunta) =>
-        pregunta.map((hibrido) =>        
-      <p>{hibrido}</p>))}
+        pregunta.map((hibrido) =>
+      <p className="questions">{hibrido}</p>))}
       <CommentPost commentPost={this.addRespuesta}/>
       </div>
     );

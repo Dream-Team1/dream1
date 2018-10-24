@@ -25,7 +25,7 @@ agregar(){
       <div>
         <input className = "inputbox" onChange = {this.updateComentario}
         value = {this.state.comentario}></input>
-        <button className = "boton" onClick ={this.agregar}>Submit</button>
+        <button className = "boton" onClick ={this.agregar}>Comment</button>
       </div>
     );
   }

@@ -130,3 +130,9 @@ p{
   font-size: 20px;
     font-weight: bold;
   }
+  .questions{
+    color: #9b0f53;
+    font-size: 20px;
+      font-weight: bold;
+      text-shadow: 2px 2px black;
+  }
