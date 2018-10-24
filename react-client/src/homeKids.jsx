@@ -13,7 +13,7 @@ class HomeKids extends React.Component {
 
             <Link className="plankids" to="/login">Plan a Party</Link>
            <center><h1 className="homekids">**Kids Party**</h1></center>
-           <h3 className="text">Find the most rated place to buy your party needs:</h3>
+           <h3 className="textk">Find the most rated place to buy your party needs:</h3>
              <Main />
              <br/>
              <br/>
@@ -43,7 +43,7 @@ class HomeKids extends React.Component {
               /></a></li>
               </ul>
               </div>
-              <h3 className="text">Dont forget to rate this page!!!</h3>
+              <h3 className="textk2">Dont forget to rate this page!!!</h3>
               <Stars />
         </div>
 
