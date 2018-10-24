@@ -24,6 +24,9 @@ class HomeWedding extends React.Component {
               <br/>
               <br/>
               <br/>
+              <h3 className="textw3">Need a service? <br />
+              post it here to start<br />
+              getting responces from other people</h3>
             <Forum />
               <div className ="leftSideBar">
               <ul>

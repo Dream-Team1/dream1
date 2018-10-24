@@ -30,10 +30,7 @@ add(){
 }
   render (){
     return(
-      <div>
-      <h3 className="text">Need a service? <br />
-      post it here to start<br />
-      getting responces from other people</h3>
+      <div>      
        <p className ="textbox">Type of service:</p>
         <input className="inputbox" onChange={this.updateMessage1} value={this.state.message1}></input>
          <br />

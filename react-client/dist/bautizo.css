@@ -32,5 +32,12 @@ text-shadow: 2px 2px 9b8581;
   font-size: 30px;
   font-weight: bold;
   font-family:sans-serif;
-  text-shadow: 2px 2px #267c99;
+  text-shadow: 2px 2px #9b8581;
+}
+.textb3{
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  font-family:sans-serif;
+  text-shadow: 2px 2px #9b8581;
 }

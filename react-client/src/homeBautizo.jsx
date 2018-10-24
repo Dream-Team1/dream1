@@ -13,11 +13,14 @@ class HomeBautizo extends React.Component {
         <div className="bautizo">
 
             <Link className="planbautizo" to="/login">Plan a Party</Link>
-            <center><h1 className="homebautizo">Plan your baby an awesome bautizo</h1></center>
-            <h3 className="textb">Find the most rated place to buy your party needs:</h3>
+            <center><h1 className="homebautizo">**Plan your baby an awesome bautizo**</h1></center>
+            <center><h3 className="textb">Find the most rated place to buy your party needs:</h3></center>
               <Main />
               <br/>
               <br/>
+              <h3 className="textb3">Need a service? <br />
+              post it here to start<br />
+              getting responces from other people</h3>
             <Forum />
               <div className ="leftSideBar">
               <ul>

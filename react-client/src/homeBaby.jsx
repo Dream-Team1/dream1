@@ -18,6 +18,9 @@ class HomeBaby extends React.Component {
               <Main />
               <br/>
               <br/>
+              <h3 className="textbaby3">Need a service? <br />
+              post it here to start<br />
+              getting responces from other people</h3>
             <Forum />
               <div className ="leftSideBar">
               <ul>

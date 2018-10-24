@@ -127,8 +127,9 @@ p{
   font-family:sans-serif;
   text-shadow: 2px 2px #d3a0d1;
 }
+/*this is for the mun in the rating system */
 .num{
   font-weight: bold;
-  color: black;
+  color: #8e1863;
   font-size: 25px;
 }

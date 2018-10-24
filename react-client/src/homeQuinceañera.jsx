@@ -15,7 +15,7 @@ class Home extends React.Component {
 
             <Link className="planquinceañera" to="/login">Plan a Party</Link>
             <center><h1 className="quinceañeraa">My Quinceañera</h1></center>
-            <h3 className="text">Find the most rated place to buy your party needs:</h3>
+            <center><h3 className="textq">Find the most rated place to buy your party needs:</h3></center>
               <Main />
               <br/>
               <br/>
@@ -24,6 +24,9 @@ class Home extends React.Component {
               <br/>
               <br/>
               <br/>
+              <h3 className="textq3">Need a service? <br />
+              post it here to start<br />
+              getting responces from other people</h3>
             <Forum />
               <div className ="leftSideBar">
               <ul>
@@ -47,7 +50,7 @@ class Home extends React.Component {
                /></a></li>
                </ul>
                </div>
-               <h3 className="text">Dont forget to rate this page!!!</h3>
+               <h3 className="text2q">Dont forget to rate this page!!!</h3>
                <Stars />
         </div>
 
