@@ -18,16 +18,17 @@ export default class Calendar extends React.Component {
   render() {
     return (
       <div>
-      <h1 className="calendar">Pick Your Special Day!</h1>
-        <DayPicker
+      <center><h1 className="calendar">Pick Your Special Day!</h1>
+        <DayPicker className="cal"
           selectedDays={this.state.selectedDay}
           onDayClick={this.handleDayClick}
         />
-        <p>
+        <p className="cal">
           {this.state.selectedDay
             ? this.state.selectedDay.toLocaleDateString()
             : 'Please select a day '}
         </p>
+        </center>
       </div>
     );
   }

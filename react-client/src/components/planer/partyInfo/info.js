@@ -47,18 +47,18 @@ add(){
   render (){
     return(
       <div>
-      <p>Title of party/event:</p>
+      <p className="inf">Title of party/event:</p>
       <input className="inputbox"  onChange={this.updateTitle} value={this.state.title}></input>
        <br />
        <br />
-       <p>Name of party owner:</p>
+       <p className="inf">Name of party owner:</p>
        <input className="inputbox"  onChange={this.updateName} value={this.state.name}></input>
         <br />
         <br />
-        <p>Party Details:</p>
+        <p className="inf">Party Details:</p>
        <textarea className="areatext" onChange={this.updateDetails} value={this.state.details}></textarea>
-       <p>Party address:</p>
-      <textarea className="areatext" onChange={this.updateAddress} value={this.state.address}></textarea>
+       <p className="inf">Party address:</p>
+      <textarea className="areatext" onChange={this.updateAddress} value={this.state.address}></textarea><br/>
       <button className="infobutton" onClick={this.add}>submit</button>
      </div>
    );

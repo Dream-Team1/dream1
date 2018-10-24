@@ -27,8 +27,8 @@ import Info from "./partyInfo/info.js";
   render () {
     return (
       <div>
-        <h1 className="partyinfo">this is the form</h1>
-        <Info addPost={this.addInfo}/>
+        <center><h1 className="partyinfo7">Fill this in with the information of the party</h1>
+        <Info addPost={this.addInfo}/></center>
       </div>
     )
   }

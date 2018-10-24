@@ -85,9 +85,9 @@ class TodoList extends React.Component {
   render(){
     return(
       <div className ="todoListMain">
-        <h4>Enter your pending tasks</h4>
+        <h3 className="todos">Enter your pending tasks</h3>
         <TodoInput  todoText="" addTodo={this.addTodo}/>
-        <ul>
+        <ul className="eachTodo">
         {this.state.todos.map((todo) => {
           return <TodoItem todo={todo} key={todo.id} id={todo.id} removeTodo={this.removeTodo}/>
           })}
