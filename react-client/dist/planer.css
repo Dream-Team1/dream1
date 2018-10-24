@@ -34,10 +34,14 @@ text-shadow: 2px 2px gray;
 /* inputbox  */
 .inputbox{
   border-radius: 55px;
+  font-size: 15px;
+  font-weight: bold;
 }
 /* textarea */
 .areatext{
   border-radius: 55px;
+  font-size: 15px;
+  font-weight: bold;
 }
 /*form button  */
 .infobutton{

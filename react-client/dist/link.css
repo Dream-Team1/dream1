@@ -30,12 +30,7 @@ h2{
     /* font-size: 55px; */
     text-shadow: 2px 2px #00CED1;
 }
-/* service name/description */
-p.textbox{
-  color: black;
-  /* font-size: 55px; */
-  /* text-shadow: 2px 2px #FF0000; */
-}
+
 /* text under the header */
 p.underh1{
   color: black;
@@ -61,6 +56,7 @@ p.underh1{
 /* background-color: red; */
 /* font-family: 'Kaushan Script', cursive; */
 border-radius: 55px;
+font-weight: bolder;
 /* font-size: 55px; */
 /* text-shadow: 2px 2px #FF0000; */
 }
@@ -128,3 +124,9 @@ p{
   color: #8e1863;
   font-size: 25px;
 }
+/*this is for the forum lettering */
+.serv{
+  color: black;
+  font-size: 20px;
+    font-weight: bold;
+  }

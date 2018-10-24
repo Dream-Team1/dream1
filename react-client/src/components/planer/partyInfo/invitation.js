@@ -34,7 +34,7 @@ class Invitation extends React.Component {
       <img className="pic" src="https://i.imgur.com/JGGDTZg.png" />
       <center><h1 className="invitation">**You are invited!!**</h1></center>
         <center><h3 className="invitation2">This is an invitation to my party/event.</h3></center>
-        <InfoThings info={this.state.info} />
+        <InfoThings info={this.state.info} /><br/><br/>
         <center><img className="pic2" src="https://i.imgur.com/ZPsYALl.png" /></center>
 
 

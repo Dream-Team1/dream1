@@ -30,12 +30,12 @@ add(){
 }
   render (){
     return(
-      <div>      
-       <p className ="textbox">Type of service:</p>
+      <div>
+       <p className ="serv">Type of service:</p>
         <input className="inputbox" onChange={this.updateMessage1} value={this.state.message1}></input>
          <br />
          <br />
-       <p className ="textbox">Description:</p>
+       <p className ="serv">Description:</p>
        <textarea className="areatext" onChange={this.updateMessage2} value={this.state.message2}></textarea>
       <button className="button2" onClick={this.add}>Submit</button>
      </div>
