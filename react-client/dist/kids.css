@@ -11,3 +11,12 @@ h1.homekids{
    font-family: 'Dancing Script', cursive;
    /* text-shadow: 2px 2px #FF0000; */
 }
+
+/* plan a party button */
+.plankids{
+  color: black;
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: 75vw;
+text-shadow: 2px 2px gray;
+}
