@@ -46,6 +46,7 @@ render() {
     <br/>
     <br/>
     <center><h1 className="loginn">Login to continue planning your party!!</h1></center>
+    <center><p className ="serv">Enter an email and create a password.</p></center>
     <br/>
     <br/>
     <br/>
