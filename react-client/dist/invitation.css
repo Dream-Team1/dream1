@@ -1,0 +1,55 @@
+.invitacion{
+  background-image: url("https://i.imgur.com/x7Cotas.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.invitation{
+  color: #b25b05;
+   text-shadow: 2px 2px white;
+   font-family: 'Dancing Script', cursive;
+    text-shadow: 2px 2px black;
+    margin-top: -14%;
+
+}
+.invitation2{
+  color: #2984c6;
+  font-size: 20px;
+  font-weight: bold;
+  font-family:sans-serif;
+  text-shadow: 2px 2px black;
+
+}
+
+.invi2{
+  color: #2d8417;
+  font-size: 25px;
+  font-weight: bold;
+  font-family:sans-serif;
+  text-shadow: 2px 2px black;
+}
+
+
+.title1{
+  font-family: 'Lobster', cursive;
+  color: #701d45;
+  text-shadow: 2px 2px black;
+  font-size: 55px;
+}
+.con1{
+  color: #701d45;
+  font-size: 28px;
+  font-weight: bold;
+  font-family:sans-serif;
+  text-shadow: 2px 2px black;
+}
+.pic{
+  position: relative;
+  bottom: 100%;
+  margin-top: -7%;
+}
+.pic2{
+  position: relative;
+  bottom: 100%;
+  margin-top: -17%;
+}

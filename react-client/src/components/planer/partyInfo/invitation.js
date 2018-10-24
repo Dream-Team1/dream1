@@ -1,6 +1,6 @@
 import React from 'react';
-import InfoThings from "./infothings.jsx"
-
+import InfoThings from "./infothings.jsx";
+import "../../../../dist/invitation.css";
 
 
 class Invitation extends React.Component {
@@ -30,10 +30,13 @@ class Invitation extends React.Component {
 
   render () {
     return (
-      <div>
-        <p>You are invited!!</p><br /><br /><br />
-        <p>This is an invitation to my party/event.</p><br /><br /><br />
+      <div className="invitacion">
+      <img className="pic" src="https://i.imgur.com/JGGDTZg.png" />
+      <center><h1 className="invitation">**You are invited!!**</h1></center>
+        <center><h3 className="invitation2">This is an invitation to my party/event.</h3></center>
         <InfoThings info={this.state.info} />
+        <center><img className="pic2" src="https://i.imgur.com/ZPsYALl.png" /></center>
+
 
       </div>
     )
