@@ -1,6 +1,7 @@
 import React from 'react';
 import InfoThings from "./infothings.jsx";
 import "../../../../dist/invitation.css";
+import {Link} from 'react-router-dom';
 
 
 class Invitation extends React.Component {
@@ -31,6 +32,7 @@ class Invitation extends React.Component {
   render () {
     return (
       <div className="invitacion">
+      <Link className="outbutton" to='/'>Home</Link>
       <img className="pic" src="https://i.imgur.com/JGGDTZg.png" />
       <center><h1 className="invitation">**You are invited!!**</h1></center>
         <center><h3 className="invitation2">This is an invitation to my party/event.</h3></center>
