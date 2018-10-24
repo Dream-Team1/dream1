@@ -4,6 +4,7 @@ import Comments from "./FORO/Comments.js";
 import Post from "./FORO/Post.js";
 import List from "./FORO/List.js";
 import $ from "jquery";
+import ComentariosMain from "./FORO/comments/commentsMain.js";
 
 class Forum extends React.Component {
 constructor(props){
@@ -32,7 +33,7 @@ constructor(props){
       url: '/Forum',
       method: 'GET',
     success: (results) => {
-      this.setState({posts:results});    
+      this.setState({posts:results});
     },
     error: (xhr, err) => {
       console.log('err', err);
@@ -47,10 +48,11 @@ constructor(props){
     return(
         <div>
           <Comments addPost={this.addComments} />
-           <List posts={this.state.posts} />
+        <ComentariosMain />
          </div>
     )
   }
 }
 
 export default Forum;
+//           <List posts={this.state.posts} />

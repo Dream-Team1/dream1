@@ -1,20 +1,43 @@
 .bautizo{
 
-  background-image: url("https://i.imgur.com/xW7GzwK.jpg");
+  background-image: url("https://i.imgur.com/zgToC2H.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 /* the heder */
 h1.homebautizo{
-  color: blue;
-  font-size: 55px;
+  color: #9b8581;
+  font-size: 65px;
   font-family: 'Dancing Script', cursive;
-  /* text-shadow: 2px 2px #FF0000; */
+   text-shadow: 2px 2px #267c99;
 }
 /* plan a party button */
 .planbautizo{
-  color: #42f4e8;
+  color: #267c99;
     font-size: 35px;
     font-weight: bold;
     margin-left: 75vw;
-text-shadow: 2px 2px black;
+text-shadow: 2px 2px 9b8581;
+}
+.textb{
+  color: #267c99;
+  font-size: 30px;
+  font-weight: bold;
+  font-family:sans-serif;
+  text-shadow: 2px 2px #9b8581;
+}
+.textb2{
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  font-family:sans-serif;
+  text-shadow: 2px 2px #9b8581;
+}
+.textb3{
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  font-family:sans-serif;
+  text-shadow: 2px 2px #9b8581;
 }

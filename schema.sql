@@ -21,6 +21,7 @@ CREATE TABLE info (
   name varchar(50) NOT NULL,
   details varchar(500) NOT NULL,
   address varchar(500) NOT NULL,
+  title varchar(500) NOT NULL,
   PRIMARY KEY (ID)
 );
 

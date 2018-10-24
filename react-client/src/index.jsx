@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import fire from './Fire.js';
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 import Planer from "./planer.jsx";
 import Home from "./homeQuinceañera.jsx";
@@ -34,6 +33,7 @@ class App extends React.Component {
              <Route path="/baby" component={HomeBaby}/>
              <Route path="/formal" component={HomeFormal}/>
              <Route path="/random" component={HomeRandom}/>
+             <Route path="/invitation" component={Invitation}/>
 
            </Switch>
      </BrowserRouter>

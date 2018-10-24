@@ -30,12 +30,7 @@ h2{
     /* font-size: 55px; */
     text-shadow: 2px 2px #00CED1;
 }
-/* service name/description */
-p.textbox{
-  color: black;
-  /* font-size: 55px; */
-  /* text-shadow: 2px 2px #FF0000; */
-}
+
 /* text under the header */
 p.underh1{
   color: black;
@@ -61,6 +56,7 @@ p.underh1{
 /* background-color: red; */
 /* font-family: 'Kaushan Script', cursive; */
 border-radius: 55px;
+font-weight: bolder;
 /* font-size: 55px; */
 /* text-shadow: 2px 2px #FF0000; */
 }
@@ -82,12 +78,7 @@ border-radius: 55px;
   /* font-size: 55px; */
   /* text-shadow: 2px 2px #FF0000; */
 }
-/* the header for the calendar */
-h1.calendar{
-  color: #4fffdb
-  /* font-size: 55px; */
-  /* text-shadow: 2px 2px #FF0000; */
-}
+
 /*this is for the images in the home page*/
 .link{
   border-radius: 15px;
@@ -98,14 +89,50 @@ h1.calendar{
 /* map header */
 .entrie-name{
   color: black;
-    font-size: 30px;
+     font-size: 15px;
     font-weight: bold;
 }
 /* map address */
 .entrie-address{
-    font-size: 20px;
+    font-size: 10px;
+    font-weight: bold;
+    color: black;
 }
 /* rating stars */
-.entrie-rating{
-  font-size: 15px;
+p{
+
+  font-weight: bold;
+  color: black;
 }
+/*this is for the contact icons*/
+.leftSideBar{
+  position: relative;
+  bottom: 40%;
+}
+
+/*this is for the text in all home components*/
+.text{
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  font-family:sans-serif;
+  text-shadow: 2px 2px #d3a0d1;
+}
+/*this is for the mun in the rating system */
+.num{
+  font-weight: bold;
+  color: #8e1863;
+  font-size: 25px;
+}
+/*this is for the forum lettering */
+.serv{
+  color: black;
+  font-size: 20px;
+    font-weight: bold;
+  }
+  .questions{
+    color: #9b0f53;
+    font-size: 20px;
+      font-weight: bold;
+      text-shadow: 2px 2px black;
+  }

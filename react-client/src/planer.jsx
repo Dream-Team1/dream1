@@ -12,30 +12,24 @@ import {Link} from 'react-router-dom';
     return (
       <div className="planer">
 
-
         <Link className="outbutton" to='/'>Logout</Link>
-        <center><h1 className="homeplaner">Lets start creating your invitations.</h1></center>
-          <center><h1 className="homeplaner">Enter the information from the party here:</h1></center>
+        <center><h1 className="homeplaner1">Lets start creating your invitations.</h1></center>
+          <center><h1 className="homeplaner1">Enter the information from the party here:</h1></center>
           <div className="container">
             <div className="row">
-              <div className="col-md-3">
+              <div className="col-md-4">
               <TodoList />
               </div>
-              <div className="col-md-6">
+              <div id="cal"className="col-md-4">
               <Calendar />
               </div>
-              <div className="col-md-3">
+              <div className="col-md-4">
               <PartyInfo />
               </div>
             </div>
             <div className="row">
               <br /><br />
-              <br /><br />
-              <br /><br />
-              <br /><br />
-              <br /><br />
-              <br /><br />
-              <br /><br />
+              <br /><br />                        
               <Link className="donebutton" to="/invitation">Done</Link>
             </div>
           </div>

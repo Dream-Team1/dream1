@@ -38,10 +38,10 @@ app.post('/Forum', function(req, res){
 });
 
 //this are the requests for the todo pending tasks
-app.get('todo', function(req, res){
+app.get('/todo', function(req, res){
   database.selectTodos((err, results) => {
      if(err) {
-       res.sendStatus(500);
+       res.sendStatus(500);       
      } else {
        res.status(200).json(results);
      }
@@ -97,11 +97,12 @@ app.post('/info', function(req, res){
  let name = req.body.name ;
  let details = req.body.details;
  let address = req.body.address;
+  let title = req.body.title;
 
- if(!name && !details && !address) {
+ if(!name && !details && !address && !title) {
    res.sendStatus(400);
  } else {
-   database.insertInfo (name,details,address,(err, results) => {
+   database.insertInfo (name,details,address,title,(err, results) => {
      if (err) {
        res.sendStatus(500);
      } else {
@@ -125,7 +126,6 @@ app.post('/comentario', function(req, res){
 
  let comentario = req.body.comentario;
  let comentarios_com_id = req.body.comentarios_com_id;
- console.log(comentarios_com_id);
 
  if(!comentario && !comentarios_com_id) {
    res.sendStatus(400);
@@ -133,8 +133,7 @@ app.post('/comentario', function(req, res){
    database.insertComentario (comentario,comentarios_com_id,(err, results) => {
      if (err) {
        res.sendStatus(500);
-       console.log("this is 500", err);
-     } else {
+      } else {
        res.status(200).json(results);
      }
    });
@@ -156,8 +155,7 @@ app.get('/respuesta', function(req, res){
        res.sendStatus(500);
      } else {
        res.status(200).json(results);
-       console.log(results);
-     }
+    }
    })
 })
 

@@ -6,12 +6,11 @@ import Info from "./partyInfo/info.js";
   constructor(props){
     super(props);
     this.state = {
-      info: []
+
     };
     this.addInfo =this.addInfo.bind(this);
-     this.getInfo =this.getInfo.bind(this);
   }
-  addInfo(name, details,address){
+  addInfo(name, details,address,title){
    $.ajax({
      method: "POST",
       url: "/info",
@@ -19,32 +18,17 @@ import Info from "./partyInfo/info.js";
      data: JSON.stringify({
        name: name,
        details:details,
-       address:address
+       address:address,
+       title:title
      })
    })
  }
-   getInfo (){
-    $.ajax({
-      url: '/info',
-      method: 'GET',
-    success: (results) => {
-      this.setState({info:results});
-      console.log( results);
-    },
-    error: (xhr, err) => {
-      console.log('err', err);
-      }
-    })
-  }
-    componentDidMount(){
-    this.getInfo();
-  }
 
   render () {
     return (
       <div>
-        <h1 className="partyinfo">this is the form</h1>
-        <Info addPost={this.addInfo}/>
+        <center><h1 className="partyinfo7">Fill this in with the information of the party</h1>
+        <Info addPost={this.addInfo}/></center>
       </div>
     )
   }

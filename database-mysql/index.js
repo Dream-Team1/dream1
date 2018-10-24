@@ -42,7 +42,6 @@ var insertTodos = function(value1, cb) {
  connection.query('INSERT INTO todos (value1) VALUES (?)',
    [value1], (err, results, fields) => {
      if(err) {
-       console.log("this is database post")
        cb(err, null);
      } else {
        cb(null, results);
@@ -81,9 +80,9 @@ var selectInfo = function(callback) {
     }
   });
 };
-var insertInfo = function(name,details,address, cb) {
- connection.query('INSERT INTO info (name,details,address) VALUES (?,?,?)',
-   [name,details,address], (err, results, fields) => {
+var insertInfo = function(name,details,address,title, cb) {
+ connection.query('INSERT INTO info (name,details,address,title) VALUES (?,?,?,?)',
+   [name,details,address,title], (err, results, fields) => {
      if(err) {
        cb(err, null);
      } else {
