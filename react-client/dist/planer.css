@@ -7,9 +7,9 @@ body.planer{
 }
 /* remove button in plan a party */
 .removeTodo{
-  color: red;
+  /* color: red;
   background-color: blue;
-  font-family: 'Kaushan Script', cursive;
+  font-family: 'Kaushan Script', cursive; */
   border-radius: 55px;
 
   /* font-family: 'Dancing Script', cursive; */
@@ -35,4 +35,12 @@ text-shadow: 2px 2px gray;
 /*form button  */
 .infobutton{
   border-radius: 55px;
+}
+/* logout button */
+.outbutton{
+  color: black;
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: 75vw;
+text-shadow: 2px 2px gray;
 }

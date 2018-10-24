@@ -13,7 +13,7 @@ import {Link} from 'react-router-dom';
       <div className="planer">
 
 
-        <button><Link to='/'>Logout</Link></button>
+        <Link className="outbutton" to='/'>Logout</Link>
         <center><h1 className="homeplaner">Lets start creating your invitations.</h1></center>
           <center><h1 className="homeplaner">Enter the information from the party here:</h1></center>
           <div className="container">
